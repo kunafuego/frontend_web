@@ -2,10 +2,10 @@
 
 # Entrega 1: SOA (Simula, Optimiza y Ahorra) :computer:
 
-
-
 ### Domingo Agüero
 ### Pablo San Francisco
+
+
 
 ##### 1. Un archivo index.html como punto de entrada.
 
@@ -26,6 +26,12 @@
 ##### 9. Una barra de navegación que estará presente siempre en su página (en la parte superior) que permitirá ir a “home” o a cualquiera de las secciones que ustedes entreguen (recomendación, una sección debiese corresponder a una página HTML).
 
 ##### 10.Deberán entregar Javascript de lado cliente (archivos .js) que permitan hacer algunas acciones básicas sobre sus páginas y que sean sólo de carácter local, por ejemplo usar elementos HTML como un tag selection y que ante la selección de una opción cambie algo en la página, o el uso de botones que realicen acciones locales, etc. Recuerden que esto es parte integral de vuestro diseño de front.
+
+## Cambios en las reglas del negocio
+
+Los cambios que se hicieron son:
+
+1. ...
 
 ## Supuestos y consideraciones :thinking:
 
