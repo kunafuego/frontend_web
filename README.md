@@ -1,11 +1,11 @@
 # grupo-aguero_sanfco-frontend 
 
-# Entrega 1: SOA (Simula, Optimiza y Ahorra) :computer
+# Entrega 1: SOA (Simula, Optimiza y Ahorra) :computer:
 
 
 
-## Domingo Agüero
-## Pablo San Francisco
+### Domingo Agüero
+### Pablo San Francisco
 
 ##### 1. Un archivo index.html como punto de entrada.
 
