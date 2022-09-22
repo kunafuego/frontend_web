@@ -27,6 +27,13 @@
 
 ##### 10.Deberán entregar Javascript de lado cliente (archivos .js) que permitan hacer algunas acciones básicas sobre sus páginas y que sean sólo de carácter local, por ejemplo usar elementos HTML como un tag selection y que ante la selección de una opción cambie algo en la página, o el uso de botones que realicen acciones locales, etc. Recuerden que esto es parte integral de vuestro diseño de front.
 
+#### C: Todo lo descrito en el enunciado como mínimo (listado de 10 puntos), pero con un desarrollo menos elaborado (Landing page, about us, about the Game, instrucciones, etc.) 
+
+#### B: Banda C + Uso de flexbox y grid y funcionalidad muy básica con Javascript. Mayor elaboración en los aspectos mínimos de la banda C. 
+
+#### A: Banda B + Originalidad en el uso de flexbox y grid con js. Por ejemplo que al moverse por la parte de instrucciones se vayan destacando distintas partes de esta, etc.
+
+
 ## Cambios en las reglas del negocio
 
 Los cambios que se hicieron son:
