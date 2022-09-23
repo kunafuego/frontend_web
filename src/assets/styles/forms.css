@@ -1,13 +1,66 @@
 #formulario {
-  max-width: 480px;
-  margin: 10px auto;
-  padding: 10px 20px;
+  width: 40vw;
+  height: 80vh;
+  margin: 6vh;
+  padding: 1vw 2vw;
   background: #f4f7f8;
-  border-radius: 8px;
+  border-radius: 1vw;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.cuerpo_inicio{
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.empresa{
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.drop{  
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;}
+
+#titulo_sesion{
+  width: 20vw;
+}
+
+#formulario_sesion{
+  width: 35vw;
+  height: 40vh;
+  padding: 1vw 2vw;
+  margin: 5vh;
+  background: #f4f7f8;
+  border-radius: 1vw;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.labels{
+  width: 20vw;
+}
+
+.register{
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #titulo_registro {
-  margin: 0 0 30px 0;
+  margin: 0 0 3vh 0;
   text-align: center;
 }
 
@@ -18,11 +71,11 @@ input[type="email"],
 .seleccionar {
   background: rgba(255,255,255,0.1);
   border: none;
-  font-size: 16px;
+  font-size: 1vw;
   height: auto;
   margin: 0;
   outline: 0;
-  padding: 15px;
+  padding: 1.5vw;
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
@@ -46,14 +99,42 @@ input[type="email"],
   cursor: pointer;
 }
 
+.registerbutton {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #3ac162;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  cursor: pointer;
+  margin-left: 2vw;
+}
+
 .esquema {
-  margin-bottom: 70px;
   border: none;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.esquema_inicio{
+  border: none;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .letras {
   font-size: 1.4em;
   margin-bottom: 10px;
+  text-align: center;
+  
+
 }
 
 .labels {
@@ -77,4 +158,9 @@ input[type="email"],
 
 #label_escondida{
   visibility: hidden;
+}
+
+.seleccionar{
+  margin-top: 1vh;
+  width: 20vw;
 }
