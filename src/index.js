@@ -16,3 +16,13 @@ function tipo_input(valor){
     }
 }
 
+window.onscroll = function() {stickyNavbar()};
+function stickyNavbar() {
+  if (window.pageYOffset >= document.getElementById("topnav").offsetTop) {
+    document.getElementById("topnav").classList.add("sticky");
+  } else {
+    document.getElementByClassName("topnav").classList.remove("sticky");
+  }
+}
+
+// Función obtenida de https://www.w3schools.com/howto/howto_js_navbar_sticky.asp

@@ -8,6 +8,13 @@ ul.topnav {
   background-color: #BFCC94;
 }
 
+.sticky {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 ul.topnav li {float: left;}
 
 ul.topnav li a {
@@ -329,6 +336,8 @@ ul.topnav li.right {float: right;}
 
 .titulo {
   text-align: center;
+  font-size: 50px;
+  margin-top: 40px;
 }
 
 .aun_dudas {
@@ -385,6 +394,8 @@ ul.topnav li.right {float: right;}
 #sobre_la_app {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: auto;
 }
 
 .subtitulo_sobre {
@@ -393,7 +404,8 @@ ul.topnav li.right {float: right;}
 }
 
 .parrafos_sobre {
+  margin-top: 0;
   margin-left: 15vh;
   margin-right: 15px;
+  font-size: large;
 }
-

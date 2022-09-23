@@ -13,7 +13,7 @@
 
 ##### 3. La posibilidad de navegar entre distintas páginas HTML (usen la etiqueta de anchor para ello) ✅
 
-##### 4. Una página de inicio de su aplicación WEB, que sea “amigable” es decir, de navegación obvia, con títulos, menús, sub páginas y secciones que orienten al usuario.
+##### 4. Una página de inicio de su aplicación WEB, que sea “amigable” es decir, de navegación obvia, con títulos, menús, sub páginas y secciones que orienten al usuario.✅
 
 ##### 5. Las consideraciones, guía y reglas detalladas para el uso de su aplicación, a nivel de usuario como de administrador (al menos esos niveles se han de considerar).
 
