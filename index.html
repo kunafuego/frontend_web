@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/assets/styles/index.css">
+    <link rel="stylesheet" href="./src/assets/styles/simulacion.css">
+    <script src="./src/index.js"></script>
     <title>Landing Simulación Cadena de Producción</title>
 </head>
 <body>
 
-<ul class="topnav">
+<ul class="topnav" id="topnav">
     <li><a class="active" href="">Inicio</a></li>
     <li><a href="./src/views/nosotros.html">Sobre Nosotros</a></li>
     <li><a href="./src/views/about.html">Sobre la Página</a></li>
@@ -82,10 +84,90 @@
 
     <div class="lower">
         <div class = "descripcion">
-            <button onclick="window.location.href='./src/views/simulacion.html';" class="button" >Homepage</button>
+            <button onclick="window.location.href='./src/views/simulacion.html';" class="button-46" >Homepage</button>
         </div>
 
     </div>
+
+    <div class="transparent">
+        <section>
+            <form class="conboton">
+    
+                <div class="todo">
+    
+                    <div class="arriba">
+    
+                        <div class="inputs">
+                        
+                            <div class="producto">
+                                <div class="labelproducto">
+                                    <label>Tipo de Producto</label>
+                                </div>
+                                <div class="seleccionproducto">
+                                    <select class="seleccionar" id="tipo_usuario1" onchange="tipo_producto_index(this.value)">
+                                        <option value="inputproducto">Lista de Productos</option>
+                                        <option value="mueble">Muebles de vidrio</option>
+                                        <option value="lyf">Laboratorio y Farmacia</option>
+                                        <option value="espejo">Espejos</option>
+                                        <option value="reciclado">Vidrio Reciclado</option>
+                                        <option value="seguridad">Vidrio de seguridad</option>
+                                    </select>
+                                </div>
+                            </div>
+    
+                            <div class="cantidad">
+                                <div class="labelcantidad">
+                                    <label>Cantidad</label>
+                                </div>
+                                <div class="textocantidad">
+                                    <input class="input inputcantidad" type="text" id="idcantidad1" value=""/>
+                                
+                                </div>
+                            </div>
+    
+                            <div class="fechas">
+    
+                                <div class="fechainicio">
+                                    <div class="labelfechainicio">
+                                        <label>Fecha Inicio</label>
+                                    </div>
+                                    <div class="textoinicio">
+                                        <input class="input inputdateinicio" type="date" id="iddateinicio1" value=""/>
+                                    </div>
+                                </div>
+    
+                                <div class="fechafin">
+                                    <div class="labelfechafin">
+                                        <label>Fecha Fin</label>
+                                    </div>
+                                    <div class="textofin">
+                                        <input class="input inputdatefin" type="date" id="iddatefin1" value=""/>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="outputs">
+                            <img class="foto" id="idfoto1" src="./src/assets/imgs/empresa.jpeg">
+                        </div>
+    
+                        <div class="parrafo">
+                            <label class="descripcion" id="idparrafo1">Bienvenido al simulador de SOA, para poder utilizarlo debe elegir un producto de la lista de productos, rellenar con la cantidad de unidades que desea producir y finalmente el rango de fechas que le gustaría dar a su proyecto</label>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </form>
+    
+        </section>
+
+    </div>
+
+
 
 </div>
 
