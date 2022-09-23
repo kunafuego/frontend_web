@@ -347,3 +347,37 @@ ul.topnav li.right {float: right;}
   margin-right: 20%;
   margin-left: 20%;
 }
+
+
+.grid_nosotros {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* background-color: #becdda; */
+  gap: 30px;
+  text-align: center;
+}
+
+.grid_item_nosotros {
+  margin-left: 10vw;
+  margin-top: 3vw;
+  margin-bottom: 10vw;
+  margin-right: 10vw;
+  max-width: 40vw;
+  background-color: #e9ecde;
+}
+
+.imagen_nosotros {
+  border-radius: 50%;
+  height: 300px;
+}
+.texto_escondido {
+  display: none;
+}
+
+#item_2:hover #texto_escondido_pablo{
+  display: block;
+}
+
+#item_1:hover #texto_escondido_domingo{
+  display: block;
+}
