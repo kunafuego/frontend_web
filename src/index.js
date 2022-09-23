@@ -2,7 +2,6 @@
 // https://stackoverflow.com/questions/11737512/document-getelementbyidbtnid-disabled-is-not-working-in-firefox-and-chrome
 
 window.onload = function(){
-    document.getElementById('tipo_usuario1').setAttribute("disabled","disabled");
     document.getElementById('idcantidad1').setAttribute("disabled","disabled");
     document.getElementById('iddateinicio1').setAttribute("disabled","disabled");
     document.getElementById('iddatefin1').setAttribute("disabled","disabled");

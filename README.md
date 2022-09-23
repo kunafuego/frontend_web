@@ -17,7 +17,7 @@
 
 ##### 5. Las consideraciones, guía y reglas detalladas para el uso de su aplicación, a nivel de usuario como de administrador (al menos esos niveles se han de considerar).
 
-##### 6. Una sección “acerca de..”, muchas veces conocida como “about...” donde explican qué es esto!, la versión, etc.
+##### 6. Una sección “acerca de..”, muchas veces conocida como “about...” donde explican qué es esto!, la versión, etc. ✅
 
 ##### 7. Una sección de “nosotros” donde se identifique el grupo (nombre) y se individualice a sus integrantes. ✅
 

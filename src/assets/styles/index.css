@@ -15,8 +15,8 @@ ul.topnav {
   width: 100%;
 }
 
-.sticky + .landing {
-  padding-top: 60px;
+.sticky + .box-foto {
+  padding-top: 10vh;
 }
 
 ul.topnav li {float: left;}
@@ -71,7 +71,7 @@ ul.topnav li.right {float: right;}
   font-weight: 900;
   color: darkbrown;
   text-transform: uppercase;
-  margin: 2vw;
+  margin: 4vw;
   text-align: center;
   backface-visibility: hidden;
   border: 0.11vw solid #fff;
@@ -548,3 +548,14 @@ ul.topnav li.right {float: right;}
     padding: 14px 16px;
   }
 }
+
+.margen{
+  width: 100vw;
+  height: 40vh;
+  background-color: white;
+}
+
+
+
+
+
