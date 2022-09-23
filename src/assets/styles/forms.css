@@ -1,6 +1,7 @@
 #formulario {
-  width: 40vw;
-  height: 80vh;
+  width: 35vw;
+  height: 120vh;
+  min-height: 120vh;
   margin: 6vh;
   padding: 1vw 2vw;
   background: #f4f7f8;
@@ -33,19 +34,21 @@
 
 #titulo_sesion{
   width: 20vw;
+  text-align: center;
 }
 
 #formulario_sesion{
-  width: 35vw;
-  height: 40vh;
+  width: 30vw;
+  height: 55vh;
   padding: 1vw 2vw;
   margin: 5vh;
-  background: #f4f7f8;
+  background-color: #f4f7f8;
   border-radius: 1vw;
   align-items: center; 
   justify-content: center;
   display: flex;
   flex-direction: column;
+  margin-top: 5vh;
 }
 
 .labels{

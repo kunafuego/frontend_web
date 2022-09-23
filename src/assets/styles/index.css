@@ -381,3 +381,19 @@ ul.topnav li.right {float: right;}
 #item_1:hover #texto_escondido_domingo{
   display: block;
 }
+
+#sobre_la_app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: antiquewhite;
+}
+
+.subtitulo_sobre {
+  margin-left: 15vh;
+  font-size: xx-large;
+}
+
+.parrafos_sobre {
+  margin-left: 15vh;
+  margin-right: 15px;
+}
+
