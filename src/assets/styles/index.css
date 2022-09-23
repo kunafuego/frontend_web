@@ -293,7 +293,6 @@ ul.topnav li.right {float: right;}
 
 
 
-
 .lista_faq {
   list-style: none;
 }
@@ -349,8 +348,29 @@ ul.topnav li.right {float: right;}
 }
 
 
+
+.nosotros{
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.sub{
+  border-radius: 1vw;
+  margin: 1vw;
+  color: white;
+  background-color: darkgrey;
+  font-size: 1vw;
+}
+
+
 .grid_nosotros {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
   grid-template-columns: auto auto;
   /* background-color: #becdda; */
   gap: 30px;
@@ -360,18 +380,24 @@ ul.topnav li.right {float: right;}
 .grid_item_nosotros {
   margin-left: 10vw;
   margin-top: 3vw;
-  margin-bottom: 10vw;
+  margin-bottom: 2vw;
   margin-right: 10vw;
   max-width: 40vw;
   background-color: #e9ecde;
+  border-radius: 2vw;
+  border: 0.11vw solid black;
 }
 
 .imagen_nosotros {
+  border: 0.11vw solid #fff;
   border-radius: 50%;
-  height: 300px;
+  height: 25vh;
+  margin: 2vh;
 }
+
 .texto_escondido {
   display: none;
+  margin: 2vh;
 }
 
 #item_2:hover #texto_escondido_pablo{
@@ -380,4 +406,20 @@ ul.topnav li.right {float: right;}
 
 #item_1:hover #texto_escondido_domingo{
   display: block;
+}
+
+
+
+.domingo{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.pablo{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;;
 }
