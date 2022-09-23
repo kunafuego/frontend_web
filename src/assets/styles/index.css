@@ -16,7 +16,7 @@ ul.topnav {
 }
 
 .sticky + .box-foto {
-  padding-top: 10vh;
+  padding-top: 0vh;
 }
 
 ul.topnav li {float: left;}
@@ -82,6 +82,7 @@ ul.topnav li.right {float: right;}
 
 .texto-box{
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .landing{
@@ -487,23 +488,47 @@ ul.topnav li.right {float: right;}
   align-items: center; 
   justify-content: center;
 }
+
+.orden{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
   
 #sobre_la_app {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: antiquewhite;
   display: grid;
   grid-template-columns: auto;
+  border-radius: 4vw;
+  width: 90%;
+  align-items: center; 
+  justify-content: center;
+}
+
+.historia {
+  margin-top: 4vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.mision {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.funciona {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 4vh;
 }
 
 .subtitulo_sobre {
-  margin-left: 15vh;
   font-size: xx-large;
 }
 
 .parrafos_sobre {
-  margin-top: 0;
-  margin-left: 15vh;
-  margin-right: 15px;
   font-size: large;
 }
 

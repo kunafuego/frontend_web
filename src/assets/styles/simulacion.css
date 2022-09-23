@@ -34,6 +34,7 @@ ul.topnav li.right {float: right;}
     background-color: #C4A484;
     color: white;
     border: 0.11vw solid black;
+    color: #fff;
 }
 
 .inputcantidad{
@@ -54,10 +55,8 @@ ul.topnav li.right {float: right;}
     border: 0.11vw solid black;
 }
 
-.transparent{
-    color: #fff;
-    opacity: .5;
-}
+
+
 
 .lineamiento{
     align-items: center; 
@@ -95,6 +94,8 @@ ul.topnav li.right {float: right;}
     width: 100vw;
     height: 33vh;
     text-align: center;  
+    color: #fff;
+    opacity: .8;
 }
 
 .inputs{
@@ -154,16 +155,37 @@ ul.topnav li.right {float: right;}
     margin: 1vw;
 }
 
-.labelcantidad{
-    margin: 1vw;
+.textocantidad {
+    color: #fff;
+    opacity: .5;
 }
 
-.labelfechainicio{
+.labelcantidad {
     margin: 1vw;
+    color: #fff;
+    opacity: .5;
+}
+
+.textoinicio {
+    color: #fff;
+    opacity: .5;
+}
+
+.labelfechainicio {
+    margin: 1vw;
+    color: #fff;
+    opacity: .5;
+}
+
+.textofin {
+    color: #fff;
+    opacity: .5;
 }
 
 .labelfechafin{
     margin: 1vw;
+    color: #fff;
+    opacity: .5;
 }
 
 /* CSS */
