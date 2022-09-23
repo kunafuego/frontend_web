@@ -38,3 +38,10 @@ function tipo_producto(valor){
     }
 }
 
+function calcular(){
+    if (valor == "mueble"){
+        document.getElementById("idparrafo").innerHTML = "Estos muebles utilizan un sistema de pegado ultravioleta invisible, líquido e incoloro. Se puede pegar vidrio con vidrio o vidrio con acero. Su principal característica es proyectar transparencia y claridad al interior del lugar incorporando la más alta calidad y tecnología en el proceso de pegado de cristales."
+        document.getElementById("idfoto").src = "../assets/imgs/mueble.jpeg"
+    }
+}
+
