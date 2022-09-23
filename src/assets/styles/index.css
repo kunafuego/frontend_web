@@ -290,16 +290,23 @@ ul.topnav li.right {float: right;}
 
 
 
-
-
-
-.lista_faq {
-  margin-right: 2vw;
+.feq{
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center; 
   justify-content: center;
+}
+
+
+.lista_faq {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width: 70%;
+  margin: auto;
 }
 
 .elemento_faq { 
@@ -317,8 +324,7 @@ ul.topnav li.right {float: right;}
 
 .details_faq {
   cursor: pointer;
-  border: 2px solid rgba(200, 94, 94, 0.441);
-  border-radius: 4px;
+  margin-top: 1vh;
   padding: .5em .5em 0;
   display: inline-block;
   background-color: rgb(222, 185, 185);
@@ -329,7 +335,6 @@ ul.topnav li.right {float: right;}
 }
 
 .details_faq[open] summary {
-  border-bottom: 1px solid rgb(196, 192, 192);
   margin-bottom: .5em;
 }
 
