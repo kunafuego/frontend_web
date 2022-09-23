@@ -89,11 +89,11 @@ input[type="email"],
 .submit_button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #4bc970;
+  background-color: lightblue;
   font-size: 18px;
   text-align: center;
   border-radius: 10px;
-  border: 1px solid #3ac162;
+  border: 1px solid lightblue;
   margin-bottom: 10px;
   margin-left: 10%;
   cursor: pointer;
@@ -102,11 +102,11 @@ input[type="email"],
 .registerbutton {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #4bc970;
+  background-color: lightblue;
   font-size: 18px;
   text-align: center;
   border-radius: 10px;
-  border: 1px solid #3ac162;
+  border: 1px solid lightblue;
   margin-bottom: 10px;
   margin-left: 10%;
   cursor: pointer;
@@ -143,7 +143,7 @@ input[type="email"],
 }
 
 .numero {
-  background-color: #5fcf80;
+  background-color: lightblue;
   color: #fff;
   height: 30px;
   width: 30px;

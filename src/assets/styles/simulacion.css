@@ -1,0 +1,138 @@
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #BFCC94;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1vw 1vw;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 30vw) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+.todo{
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+}
+
+.arriba{
+    margin: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    width: 100vw;
+    height: 33vh;
+    text-align: center;  
+}
+
+.inputs{
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    width: 25%;
+  }
+
+.outputs{
+    margin-top: 1vh;
+    width: 25%;
+    text-align: center;  
+    object-fit: contain;
+  }
+
+.foto{
+    width: 80%;
+    height:auto;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(20vw);
+    margin: 2vw;
+    border-radius: 2vw;
+    border: 0.11vw solid black;
+    text-align: center;
+}
+
+.parrafo{
+    margin-top: 1vh;
+    width: 25%;
+    align-items: center; 
+    justify-content: center;
+}
+
+.cantidad{
+    margin: 2vw;
+    margin-left: 3vw;
+}
+
+.producto{
+    margin: 2vw;
+    margin-left: 3vw;
+}
+
+.fechas{
+    display: flex;
+    flex-direction: row;
+    margin: 2vw;
+    margin-left: 3vw;
+}
+
+.fechainicio{
+    margin: 1vw;
+}
+
+.fechafin{
+
+    margin: 1vw;
+}
+
+.descripcion{
+    align-items: center; 
+    justify-content: center;
+}
+
+.labelproducto{
+    margin: 1vw;
+}
+
+.labelcantidad{
+    margin: 1vw;
+}
+
+.labelfechainicio{
+    margin: 1vw;
+}
+
+.labelfechafin{
+    margin: 1vw;
+}
+
+
