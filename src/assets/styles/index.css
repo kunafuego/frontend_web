@@ -103,34 +103,70 @@ ul.topnav li.right {float: right;}
   text-align:center; 
 }
 
-.pie {
-  background-image: url(../imgs/pie.png);
-  background-size: cover;
-  width: 5vw;
-  max-height: 9vh;
-  min-height: 9vh;
-  margin-top: 2vh;
-  margin-left: 3vw;
+@media screen and (max-width:713px) {  
+  .pie {
+    background-image: url(../imgs/pie.png);
+    background-size: cover;
+    width: 9vw;
+    max-height: 6.5vh;
+    min-height: 6.5vh;
+    margin-top: 2vh;
+    margin-left: 2vw;
+  }
+
+  .bar {
+    background-image: url(../imgs/bar-chart.png);
+    background-size: cover;
+    width: 9vw;
+    max-height: 6.5vh;
+    min-height: 6.5vh;
+    margin-top: 2vh;
+    margin-left: 2vw;
+  }
+
+  .line {
+    background-image: url(../imgs/line-chart.png);
+    background-size: cover;
+    width: 9vw;
+    max-height: 6.5vh;
+    min-height: 6.5vh;
+    margin-top: 2vh;
+  }
 }
 
-.bar {
-  background-image: url(../imgs/bar-chart.png);
-  background-size: cover;
-  width: 5vw;
-  max-height: 9vh;
-  min-height: 9vh;
-  margin-top: 2vh;
-  margin-left: 3vw;
+@media screen and (min-width:713px) {  
+  .pie {
+    background-image: url(../imgs/pie.png);
+    background-size: cover;
+    width: 5vw;
+    max-height: 9vh;
+    min-height: 9vh;
+    margin-top: 2vh;
+    margin-left: 3vw;
+  }
+
+  .bar {
+    background-image: url(../imgs/bar-chart.png);
+    background-size: cover;
+    width: 5vw;
+    max-height: 9vh;
+    min-height: 9vh;
+    margin-top: 2vh;
+    margin-left: 3vw;
+  }
+
+  .line {
+    background-image: url(../imgs/line-chart.png);
+    background-size: cover;
+    width: 5vw;
+    max-height: 9vh;
+    min-height: 9vh;
+    margin-top: 2vh;
+  }
 }
 
-.line {
-  background-image: url(../imgs/line-chart.png);
-  background-size: cover;
-  width: 5vw;
-  max-height: 9vh;
-  min-height: 9vh;
-  margin-top: 2vh;
-}
+
+
 
 .caja{
   align-items: center; 
@@ -297,17 +333,30 @@ ul.topnav li.right {float: right;}
 
 
 
-
-
+.feq{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
 
 
 .lista_faq {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width: 70%;
+  margin: auto;
 }
 
 .elemento_faq { 
   text-align: center;
   margin-bottom: 2em;
+  align-items: center; 
+  justify-content: center;
 }
 
 .texto_faq {
@@ -318,8 +367,7 @@ ul.topnav li.right {float: right;}
 
 .details_faq {
   cursor: pointer;
-  border: 2px solid rgba(200, 94, 94, 0.441);
-  border-radius: 4px;
+  margin-top: 1vh;
   padding: .5em .5em 0;
   display: inline-block;
   background-color: rgb(222, 185, 185);
@@ -330,7 +378,6 @@ ul.topnav li.right {float: right;}
 }
 
 .details_faq[open] summary {
-  border-bottom: 1px solid rgb(196, 192, 192);
   margin-bottom: .5em;
 }
 
@@ -358,8 +405,29 @@ ul.topnav li.right {float: right;}
 }
 
 
+
+.nosotros{
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.sub{
+  border-radius: 1vw;
+  margin: 1vw;
+  color: white;
+  background-color: darkgrey;
+  font-size: 1vw;
+}
+
+
 .grid_nosotros {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
   grid-template-columns: auto auto;
   /* background-color: #becdda; */
   gap: 30px;
@@ -369,18 +437,24 @@ ul.topnav li.right {float: right;}
 .grid_item_nosotros {
   margin-left: 10vw;
   margin-top: 3vw;
-  margin-bottom: 10vw;
+  margin-bottom: 2vw;
   margin-right: 10vw;
   max-width: 40vw;
   background-color: #e9ecde;
+  border-radius: 2vw;
+  border: 0.11vw solid black;
 }
 
 .imagen_nosotros {
+  border: 0.11vw solid #fff;
   border-radius: 50%;
-  height: 300px;
+  height: 25vh;
+  margin: 2vh;
 }
+
 .texto_escondido {
   display: none;
+  margin: 2vh;
 }
 
 #item_2:hover #texto_escondido_pablo{
@@ -391,6 +465,22 @@ ul.topnav li.right {float: right;}
   display: block;
 }
 
+
+
+
+.domingo{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.pablo{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;;
+  
 #sobre_la_app {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: antiquewhite;

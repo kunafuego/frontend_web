@@ -2,7 +2,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/index.css">
+    <link rel="stylesheet" href="../assets/styles/simulacion.css">
+    <script src="../index.js"></script>
     <title>Landing Simulación Cadena de Producción</title>
 </head>
 
@@ -14,4 +15,93 @@
     <li class="right"><a href="../../index.html">Cerrar Sesión</a></li>
 </ul>
 
-<h1>SIMULACION HTML</h1>
+<body>
+
+    <header class="header">
+        <h1 class="titulo">
+            Simulador de Vidrio SOA
+        </h1>
+    </header>
+
+    <section>
+        <form class="conboton">
+
+            <div class="todo">
+
+                <div class="arriba">
+
+                    <div class="inputs">
+                    
+                        <div class="producto">
+                            <div class="labelproducto">
+                                <label>Tipo de Producto</label>
+                            </div>
+                            <div class="seleccionproducto">
+                                <select class="seleccionar" id="tipo_usuario" onchange="tipo_producto(this.value)">
+                                    <option value="inputproducto">Lista de Productos</option>
+                                    <option value="mueble">Muebles de vidrio</option>
+                                    <option value="lyf">Laboratorio y Farmacia</option>
+                                    <option value="espejo">Espejos</option>
+                                    <option value="reciclado">Vidrio Reciclado</option>
+                                    <option value="seguridad">Vidrio de seguridad</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="cantidad">
+                            <div class="labelcantidad">
+                                <label>Cantidad</label>
+                            </div>
+                            <div class="textocantidad">
+                                <input class="input inputcantidad" type="text" id="idcantidad">
+                            </div>
+                        </div>
+
+                        <div class="fechas">
+
+                            <div class="fechainicio">
+                                <div class="labelfechainicio">
+                                    <label>Fecha Inicio</label>
+                                </div>
+                                <div class="textoinicio">
+                                    <input class="input inputdateinicio" type="date" id="iddateinicio">
+                                </div>
+                            </div>
+
+                            <div class="fechafin">
+                                <div class="labelfechafin">
+                                    <label>Fecha Fin</label>
+                                </div>
+                                <div class="textofin">
+                                    <input class="input inputdatefin" type="date" id="iddatefin">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="outputs">
+                        <img class="foto" id="idfoto" src="../assets/imgs/empresa.jpeg">
+                    </div>
+
+                    <div class="parrafo">
+                        <label class="descripcion" id="idparrafo">Bienvenido al simulador de SOA, para poder utilizarlo debe elegir un producto de la lista de productos, rellenar con la cantidad de unidades que desea producir y finalmente el rango de fechas que le gustaría dar a su proyecto</label>
+                    </div>
+
+                </div>
+
+                <div class="boton">
+                    <!-- https://getcssscan.com/css-buttons-examples --> 
+                    <button class="button-86" id="idbotoncalcular" type="button" onclick="window.location.href='./resultados.html';">Calcular</button>
+    
+                </div>
+
+            </div>
+
+        </form>
+
+    </section>
+</body>
+
+</html>
