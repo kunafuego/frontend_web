@@ -6,13 +6,17 @@ ul.topnav {
   padding: 0;
   overflow: hidden;
   background-color: #BFCC94;
+  z-index: 1000 ;
 }
 
 .sticky {
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.sticky + .landing {
+  padding-top: 60px;
 }
 
 ul.topnav li {float: left;}
@@ -320,7 +324,7 @@ ul.topnav li.right {float: right;}
 
 
 .lower{
-  margin-top: 5vh;
+  margin: 5vh;
 }
 
 .descripcion{
@@ -390,6 +394,8 @@ ul.topnav li.right {float: right;}
 .aun_dudas {
   text-align: center;
   font-weight: bold;
+  display: grid;
+  grid-template-columns: auto;
 }
 
 .contactarnos {
@@ -499,4 +505,46 @@ ul.topnav li.right {float: right;}
   margin-left: 15vh;
   margin-right: 15px;
   font-size: large;
+}
+
+/* CSS https://getcssscan.com/css-buttons-examples */
+.button-46 {
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #DFDFDF;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 28px;
+  max-width: 100%;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-46:active,
+.button-46:hover {
+  outline: 0;
+}
+
+.button-46:hover {
+  background-color: palegoldenrod;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 768px) {
+  .button-46 {
+    font-size: 20px;
+    min-width: 200px;
+    padding: 14px 16px;
+  }
 }
