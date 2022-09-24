@@ -48,6 +48,8 @@
 
 #### A: Banda B + Originalidad en el uso de flexbox y grid con js. Por ejemplo que al moverse por la parte de instrucciones se vayan destacando distintas partes de esta, etc. ✅
 
+### Lo de las bandas es mas subjetivo, pero creemos que lo cumplimos jajaj.
+
 
 ## Referencias de código externo :book:
 #### Las referencias a código externo se encuentro junto al código correspondiente.
