@@ -85,7 +85,7 @@ ul.topnav li.right {float: right;}
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.arriba{
+.arriba1 {
     margin: 5vw;
     display: flex;
     flex-direction: row;
@@ -96,6 +96,78 @@ ul.topnav li.right {float: right;}
     text-align: center;  
     color: #fff;
     opacity: .8;
+}
+
+.arriba {
+    margin: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    width: 100vw;
+    height: 33vh;
+    text-align: center;  
+    color: #fff;
+}
+
+.textocantidad1 {
+    color: #fff;
+    opacity: .5;
+}
+
+.textocantidad {
+    color: #fff;
+}
+
+.labelcantidad1 {
+    margin: 1vw;
+    color: #fff;
+    opacity: .5;
+}
+
+.labelcantidad {
+    margin: 1vw;
+    color: #fff;
+}
+
+.textoinicio1 {
+    color: #fff;
+    opacity: .5;
+}
+
+.textoinicio {
+    color: #fff;
+}
+
+.labelfechainicio1 {
+    margin: 1vw;
+    color: #fff;
+    opacity: .5;
+}
+
+.labelfechainicio {
+    margin: 1vw;
+    color: #fff;
+}
+
+.textofin1 {
+    color: #fff;
+    opacity: .5;
+}
+
+.textofin {
+    color: #fff;
+}
+
+.labelfechafin1 {
+    margin: 1vw;
+    color: #fff;
+    opacity: .5;
+}
+
+.labelfechafin {
+    margin: 1vw;
+    color: #fff;
 }
 
 .inputs{
@@ -153,39 +225,6 @@ ul.topnav li.right {float: right;}
 
 .labelproducto{
     margin: 1vw;
-}
-
-.textocantidad {
-    color: #fff;
-    opacity: .5;
-}
-
-.labelcantidad {
-    margin: 1vw;
-    color: #fff;
-    opacity: .5;
-}
-
-.textoinicio {
-    color: #fff;
-    opacity: .5;
-}
-
-.labelfechainicio {
-    margin: 1vw;
-    color: #fff;
-    opacity: .5;
-}
-
-.textofin {
-    color: #fff;
-    opacity: .5;
-}
-
-.labelfechafin{
-    margin: 1vw;
-    color: #fff;
-    opacity: .5;
 }
 
 /* CSS */
