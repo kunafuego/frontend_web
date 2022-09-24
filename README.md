@@ -43,6 +43,8 @@
 
 #### C: Todo lo descrito en el enunciado como mínimo (listado de 10 puntos), pero con un desarrollo menos elaborado (Landing page, about us, about the Game, instrucciones, etc.) ✅
 
+#### La página es responsiva, es decir que se pueda ajustar a diferentes tipos de tamaños de dispositivos (pantallas). ✅
+
 #### B: Banda C + Uso de flexbox y grid y funcionalidad muy básica con Javascript. Mayor elaboración en los aspectos mínimos de la banda C. ✅
 ##### Se utiliza flexbod y grid para mantener alineado correctamente las vistas y sus sub-páginas.
 
