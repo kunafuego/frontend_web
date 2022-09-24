@@ -61,9 +61,13 @@ ul.topnav li.right {float: right;}
   background-image: url(../imgs/landing.png);
   background-size: cover;
   width: 100vw;
-  height: 45vh;
+  height: 60vh;
   position: relative;
   float: left;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 5vh;
+  margin-top: 10px;
 }
 
 .texto-box h1 {
@@ -83,13 +87,13 @@ ul.topnav li.right {float: right;}
 .texto-box{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .landing{
   align-items: center; 
   justify-content: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .contenido {
@@ -97,15 +101,16 @@ ul.topnav li.right {float: right;}
   background: rgba(255,255,255,.3);
   border: 0.11vw solid #fff;
   border-radius: 1vw;
-  height: auto;
-  width: 40vw;
-  margin-left: 6vw;
-  margin-top: 15vh;
-  position: absolute;
-  transform: translate(0, -50%);
-  display: flex;
-  flex-direction: column;
+  width: 45vw;
+  height: 25vh;
   text-align:center; 
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.h2-contenido{
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 @media screen and (max-width:713px) {  
@@ -176,25 +181,27 @@ ul.topnav li.right {float: right;}
 .caja{
   align-items: center; 
   justify-content: center;
-  display: flex;
-  flex-direction: column;
   background-color: grey;
   color: black;
   width: 35vw;
   height: 30vh;
   border: 0.11vw solid #fff;
   border-radius: 1vw;
+  margin-left: 5vh;
 }
 
 .texto1 {
   font-size: 1.5vw;
   margin-top: 1vh;
   color: white;
+  text-align: center;
 }
 
 .fotos1 {
   display: flex;
   flex-direction: row;
+  align-items: center; 
+  justify-content: center;
 }
 
 .label1{
@@ -236,6 +243,7 @@ ul.topnav li.right {float: right;}
   font-size: 1.5vw;
   margin-top: 2vh;
   color: white;
+  text-align: center;
 }
 
 .fotos2 {
@@ -244,26 +252,6 @@ ul.topnav li.right {float: right;}
   align-items: center; 
   justify-content: center;
 }
-
-
-.horizontal{
-  margin-top: 5vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  justify-content: center;
-}
-
-.access{
-  display: flex;
-  flex-direction: column;
-}
-
-.botones{
-  display: flex;
-  flex-direction: row;
-}
-
 
 .button-73 {
   align-items: center;
@@ -274,16 +262,15 @@ ul.topnav li.right {float: right;}
   box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
   color: #FFFFFF;
   cursor: pointer;
-  display: flex;
   font-family: Quicksand,sans-serif;
   font-size: 1vw;
   font-weight: 700;
   justify-content: center;
-  letter-spacing: .04em;
-  line-height: 1vw;
-  margin: 0;
-  margin-left: 2vw;
-  margin-top: 22vh;
+  /* letter-spacing: .04em; */
+  /* line-height: 1vw; */
+  margin-right: 10vw;
+  /* margin-left: 2vw;
+  margin-top: 22vh; */
   padding: 1vw 1vw;
   text-align: center;
   text-decoration: none;
@@ -291,10 +278,19 @@ ul.topnav li.right {float: right;}
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  vertical-align: baseline;
+  /* vertical-align: baseline; */
+  height: 7vh;
 }
 
+.boton_grid {
+  align-items: center;
+  text-align: center;
+  margin-left: 10vh;
+}
+
+
 .button-72 {
+  height: 7vh;
   align-items: center;
   background-color: initial;
   background-image: linear-gradient(rgba(179, 132, 201, .84), rgba(57, 31, 91, .84) 50%);
@@ -303,24 +299,24 @@ ul.topnav li.right {float: right;}
   box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,rgba(179, 132, 201, 0.4) 0 8px 12px;
   color: #FFFFFF;
   cursor: pointer;
-  display: flex;
+  /* display: flex; */
   font-family: Quicksand,sans-serif;
   font-size: 1vw;
   font-weight: 700;
   justify-content: center;
-  letter-spacing: .04em;
-  line-height: 1vw;
-  margin: 0;
-  margin-left: 28vw;
-  margin-top: 22vh;
-  padding: 1vw 1vw;
+  /* letter-spacing: .04em;
+  line-height: 1vw; */
+  /* margin: 0;
+  margin-top: 22vh; */
+  margin-left: 6vw;
+  /* padding: 1vw 1vw; */
   text-align: center;
   text-decoration: none;
   text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
+  /* touch-action: manipulation;
+  vertical-align: baseline; */
 }
 
 
