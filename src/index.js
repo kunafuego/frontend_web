@@ -43,7 +43,7 @@ function tipo_producto(valor){
         document.getElementById("idfoto").src = "../assets/imgs/seguridad.jpeg"
     } else {
         document.getElementById("idparrafo").innerHTML = "Bienvenido al simulador de SOA, para poder utilizarlo debe elegir un producto de la lista de productos, rellenar con la cantidad de unidades que desea producir y finalmente el rango de fechas que le gustaría dar a su proyecto"
-        document.getElementById("idfoto").src = "../assets/imgs/fotoprueba.png"
+        document.getElementById("idfoto").src = "../assets/imgs/empresa.jpeg"
     }
 }
 
@@ -65,7 +65,7 @@ function tipo_producto_index(valor){
         document.getElementById("idfoto1").src = "./src/assets/imgs/seguridad.jpeg"
     } else {
         document.getElementById("idparrafo1").innerHTML = "Bienvenido al simulador de SOA, para poder utilizarlo debe elegir un producto de la lista de productos, rellenar con la cantidad de unidades que desea producir y finalmente el rango de fechas que le gustaría dar a su proyecto"
-        document.getElementById("idfoto1").src = "./src/assets/imgs/fotoprueba.png"
+        document.getElementById("idfoto1").src = "./src/assets/imgs/empresa.jpeg"
     }
 }
 
