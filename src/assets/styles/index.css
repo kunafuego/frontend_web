@@ -58,7 +58,14 @@ ul.topnav li.right {float: right;}
 }
 
 .box-foto{  
-  background-image: url(../imgs/landing.png);
+  background: 
+  /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 255, 255, 0.35), 
+      rgba(255, 255, 255, 0.35)
+    ),
+    /* bottom, image */
+    url(../imgs/landing.png);
   background-size: cover;
   width: 100vw;
   height: 60vh;
@@ -94,6 +101,8 @@ ul.topnav li.right {float: right;}
 .landing{
   align-items: center; 
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .contenido {
@@ -113,74 +122,32 @@ ul.topnav li.right {float: right;}
   grid-column-end: 3;
 }
 
-@media screen and (max-width:713px) {  
-  .pie {
-    background-image: url(../imgs/pie.png);
-    background-size: cover;
-    width: 9vw;
-    max-height: 6.5vh;
-    min-height: 6.5vh;
-    margin-top: 2vh;
-    margin-left: 2vw;
-  }
-
-  .bar {
-    background-image: url(../imgs/bar-chart.png);
-    background-size: cover;
-    width: 9vw;
-    max-height: 6.5vh;
-    min-height: 6.5vh;
-    margin-top: 2vh;
-    margin-left: 2vw;
-  }
-
-  .line {
-    background-image: url(../imgs/line-chart.png);
-    background-size: cover;
-    width: 9vw;
-    max-height: 6.5vh;
-    min-height: 6.5vh;
-    margin-top: 2vh;
-  }
+.fotoline{
+  width: 35%;
+  height:auto;
+  margin: 2vw;
+  text-align: center;
 }
 
-@media screen and (min-width:713px) {  
-  .pie {
-    background-image: url(../imgs/pie.png);
-    background-size: cover;
-    width: 5vw;
-    max-height: 9vh;
-    min-height: 9vh;
-    margin-top: 2vh;
-    margin-left: 3vw;
-  }
-
-  .bar {
-    background-image: url(../imgs/bar-chart.png);
-    background-size: cover;
-    width: 5vw;
-    max-height: 9vh;
-    min-height: 9vh;
-    margin-top: 2vh;
-    margin-left: 3vw;
-  }
-
-  .line {
-    background-image: url(../imgs/line-chart.png);
-    background-size: cover;
-    width: 5vw;
-    max-height: 9vh;
-    min-height: 9vh;
-    margin-top: 2vh;
-  }
+.fotopie{
+  width: 35%;
+  height:auto;
+  margin: 2vw;
+  text-align: center;
 }
 
-
-
+.fotobar{
+  width: 35%;
+  height:auto;
+  margin: 2vw;
+  text-align: center;
+}
 
 .caja{
   align-items: center; 
   justify-content: center;
+  display: flex;
+  flex-direction: column;
   background-color: grey;
   color: black;
   width: 35vw;
@@ -195,6 +162,7 @@ ul.topnav li.right {float: right;}
   margin-top: 1vh;
   color: white;
   text-align: center;
+  opacity: 1;
 }
 
 .fotos1 {
@@ -251,6 +219,8 @@ ul.topnav li.right {float: right;}
   flex-direction: row;
   align-items: center; 
   justify-content: center;
+  width: 50%;
+  height: auto;
 }
 
 .button-73 {

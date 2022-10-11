@@ -72,7 +72,7 @@ ul.topnav li.right {float: right;}
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
+    background-color: rgb(120, 204, 231);
     width: 95vw;
 }
 
