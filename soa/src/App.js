@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import React from 'react'
-import Barra from './components/about'
 import './App.css';
+import './index.css';
+import './simulacion.css';
+import './forms.css';
 import Routing from './Routing';
 
 function App() {
