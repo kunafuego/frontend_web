@@ -342,7 +342,7 @@ ul.topnav li.right {float: right;}
 .titulo {
   text-align: center;
   font-size: 50px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .aun_dudas {
@@ -446,6 +446,7 @@ ul.topnav li.right {float: right;}
   flex-direction: column;
   align-items: center; 
   justify-content: center;
+  margin-bottom: 80vh;
 }
   
 #sobre_la_app {
@@ -454,7 +455,7 @@ ul.topnav li.right {float: right;}
   display: grid;
   grid-template-columns: auto;
   border-radius: 4vw;
-  width: 90%;
+  width: 65%;
   align-items: center; 
   justify-content: center;
 }
@@ -473,7 +474,50 @@ ul.topnav li.right {float: right;}
 .funciona {
   margin-left: 3vw;
   margin-right: 3vw;
+}
+
+.funciona2 {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.solicita {
+  margin-left: 3vw;
+  margin-right: 3vw;
   margin-bottom: 4vh;
+}
+
+.subtitulo {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.indice {
+  text-align: center;
+  margin-bottom: 4vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(197, 193, 196);
+  display: grid;
+  grid-template-columns: auto;
+  border-radius: 4vw;
+  width: 40%;
+  align-items: center;
+  justify-content: left;
+}
+
+.title {
+  margin-top: 2vh;
+  margin-left: 3vw;
+}
+
+.indice2 {
+  text-align: left;
+  margin-bottom: 4vh;
+  border-radius: 4vw;
+  width: 90%;
+  align-items: center;
+  justify-content: left;
+  margin-left: 3vw;
 }
 
 .subtitulo_sobre {

@@ -1,0 +1,135 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/index.css">
+    <script src="../index.js"></script>
+    <title>Sobre la Página</title>
+</head>
+
+<ul class="topnav" id="topnav">
+    <li><a href="../../index.html">Inicio</a></li>
+    <li><a href="./nosotros.html">Sobre Nosotros</a></li>
+    <li><a href="./about.html">Sobre la Página</a></li>
+    <li><a href="./FAQ.html">Preguntas Frecuentes</a></li>
+    <li><a class="active" href="">Documentación</a></li>
+    <li class="right"><a href="./registro.html">Registrar</a></li>
+    <li class="right"><a href="./inicio_sesion.html">Iniciar Sesión</a></li>
+</ul>
+
+<div class="orden">
+
+<h1 class="titulo"> Documentación de SOA </h1>
+
+<div class="indice">
+    <div class="title">
+        <h2 class="subtitulo"> Índice </h2>
+    </div>
+    <div class="indice2">
+        <li><a class="link1" href="#descripcion"> Descripción </a></li>
+        <li><a class="link2" href="#objective"> Objetivo </a></li>
+        <li><a class="link3" href="#inscripcion"> Inscripción a SOA </a></li>
+        <li><a class="link4" href="#tipos"> Tipos de usuarios </a></li>
+        <li><a class="link5" href="#sims"> Simulaciones </a></li>
+        <li><a class="link6" href="#results"> Resultados de Simulación </a></li>
+        <li><a class="link7" href="#mysims"> Mis Simulaciones </a></li>
+        <li><a class="link8" href="#myreq"> Mis Solicitudes </a></li>
+    </div>
+</div>
+
+<section id="sobre_la_app">
+
+    <div class="historia">
+        <h3 class="subtitulo_sobre" id="descripcion"> Descripción: 📝</h3>
+        <p class="parrafos_sobre"> SOA es una aplicación ligada a la cadena de producción de vidrio, que facilita información a usuarios registrados 
+            a la plataforma mediante simulaciones de distintos productos de la industria del vidrio. </p>
+    </div>
+    <div class="mision">
+        <h3 class="subtitulo_sobre" id="objective"> Objetivo: 🎯</h3>
+        <p class="parrafos_sobre"> Usted como usuario podrá, mediante el simulador y la información que esta entrega, poder tomar todas las decisiones 
+            ligadas a su empresa a nivel de producción. </p>
+    </div>
+    <div class="funciona">
+        <h3 class="subtitulo_sobre" id="inscripcion"> Inscripción a SOA ✍🏽</h3>
+        <p class="parrafos_sobre"> Al ingresar a la página web de SOA, uno podrá ver si le interesa lo que ofrece y tomar la decisión
+            de inscribirse a la plataforma o no. Si decide ser parte de SOA, el gerente de la empresa debe crearse una cuenta de tipo Usuario Gerente, 
+            donde podrá ingresar como texto el nombre de su empresa. Una vez que esté registrado, el resto de los usuarios de la empresa podrán
+            registrarse como el tipo de Usuario que deseen (Finanzas, Insumos o Empleos), y cuando presione registrar se le enviará
+            automaticamente una request al usuario gerente de esa empresa, indicándole que una cierta persona quiere registrarse a su 
+            empresa. El usuario gerente será capaz de aceptar o rechazar esta petición, con lo que el inicio de sesión estaría listo para 
+            todos los usuarios de la empresa.<br><br>
+            Luego, para realizar simulaciones el usuario gerente será capaz de iniciar una, y al momento de hacerla, se le enviará
+            esta simulación a todos los usuarios que pertenezcan a la empresa. A cada uno se le mostrará información distinta de la simulación
+            dependiendo de su cargo en la empresa. En ese momento, y después de analizar la simulación, los usuarios serán capaces de aceptar
+            o rechazar la simulación hecha por el gerente. </p>
+    </div>
+    <div class="funciona2">
+        <h3 class="subtitulo_sobre" id="tipos"> Tipos de Usuarios 👷</h3>
+        <p class="parrafos_sobre"> Existen cuatro tipos de usuario en SOA y dependiendo del tipo se tendrá diferentes acceso a funcionalidades e 
+            información.
+            <li> Usuario Gerente: Es el único usuario que tiene acceso a todas las funciones e información de SOA, este usuario inicia registrando a su empresa
+                y luego podrá revisar las solicitudes de otros usuarios que se registraron en la misma empresa con cualquiera de los otros roles en la 
+                vista "Mis Solicitudes". Es el único tipo de usuario que puede crear simulaciones en la vista "Simular", y al simular será enviado a la vista de 
+                "Resultados de su Simulación", donde podrá ver toda la información generada por el simulador y tendrá que tomar la decisión de mandarla a los 
+                otros usuarios de la empresa, o volver hacia atras y simular de nuevo. Si es que decide enviar la simulación, esta se guarda en la vista "Mis Simulaciones", 
+                donde aparecerá un listado de todas las simulaciones ligadas a la empresa.
+            </li>
+            <p></p>
+            <li> Usuario Finanzas: Este usuario deberá registrarse en la plataforma solo cuándo sepa que está registrado el Usuario Gerente, si no, no podrá
+                elegir a su empresa en las opciones. Ya registrado, se mandará automaticamente una solicitud de parte del Usuario Finanzas al Usuario Gerente y este último
+                deberá decidir si aprobar o rechazarlo. Si es que se rechaza la solicitud, la cuenta será borrada de la plataforma, en caso contrario se tendrá acceso 
+                a las funcionalidades e información correspondientes. Esto tipo de usuario está ligado a los costos y ganancias asociados a la simulación, podrá acceder a 
+                las simulaciones en la vista "Mis Simulaciones" y solamente tendrá acceso a la información ligada a las finanzas de la simulación, y en base a lo que le 
+                aparece tendrá que aceptar o rechazar la simulación y proveer un feedback en cualquiera de los dos casos indicando las razones de por qué aprobó o rechazó esa simulación.
+            </li>
+            <p></p>
+            <li> Usuario Insumos: Sigue el mismo proceso que el usuario anterior para acceder a la plataforma, la diferencia es que este tipo de usuario ligado a los insumos y 
+                productos de la simulación, podrá acceder a las simulaciones en la vista "Mis Simulaciones" y solamente tendrá acceso a la información ligada a las insumos de 
+                la simulación, y en base a lo que le aparece tendrá que aceptar o rechazar la simulación y proveer un feedback en cualquiera de los dos casos indicando las razones 
+                de por qué aprobó o rechazó esa simulación.
+            </li>
+            <p></p>
+            <li> Usuario Empleos: Sigue el mismo procedimiento que los usuarios Insumos y Finanzas, pero solo tiene acceso a la información ligada a los empleos ligados a la 
+                simulación.
+            </li>
+        </p>
+    </div>
+    <div class="funciona2">
+        <h3 class="subtitulo_sobre" id="sims"> Simulaciones 🕹️</h3>
+        <p class="parrafos_sobre"> El Usuario Gerente al ya estar ingresado, querrá hacer una simulación, por lo que accederá a la vista "Simular". Acá podrá ver un tablero, donde 
+            tendrá la opción de seleccionar un tipo de producto, donde estará la opción de ver una imagen de dicho producto, junto a la descripción de este. Luego de seleccionar 
+            el producto que desea simular, tendrá que elegir para qué cantidad de producto desea simular, por lo que está un "range slider" en el que puede definir la cantidad de producto 
+            dentro de un rango predeterminado. Finalmente tendrá que escoger un rango de fechas en el cual se quiere desarrollar el proyecto. Ya con los datos ingresados se puede continuar 
+            a la siguiente fase de la simulación presionando el botón "Calcular".
+        </p>
+    </div>
+    <div class="funciona2" id="results">
+        <h3 class="subtitulo_sobre"> Resultados de Simulación 📈</h3>
+        <p class="parrafos_sobre"> Al presionar el botón "Calcular", se redirige al Usuario Gerente a los Resultados de Simulación, donde podrá ver la información ingresada, junto a los 
+            valores que ha determinado el simulador a nivel de costos, ventas, empleos, insumos y ganancias. Acá podrá analizar los resultados y deberá tomar la decisión de mandar la 
+            simulación a los otros usuarios de la empresa o volver hacia atrás y hacer otra simulación. Si es que decide continuar con la simulación, deberá apretar el botón "Enviar". 
+            Una vez seleccionado este botón, será redirigido a la vista "Mis Simulaciones". También se tendrá acceso a esta vista a partir de "Mis Simulaciones", por si algún Usuario Gerente 
+            quiere ver las simulaciones pasadas, y acá habrá un cambio de vista, ya que se podrá ver la simulación, sus resultados y además los feedbacks que han dado los otros tipos 
+            de usuario. En el caso de los otros tipos de usuarios, por acá deberán ver sus simulaciones correspondientes, pero con la información diferenciada según 
+            corresponde. Además, estos tendrán la opción de elegir si "Aprobar Proyecto" o "Rechazar Proyecto" y una entrada de texto para justificar su decisión. Ya completado el feedback, se 
+            deberá apretar el botón "Enviar" para que se registre el feedback.
+        </p>
+    </div>
+    <div class="funciona2">
+        <h3 class="subtitulo_sobre" id="mysims"> Mis Simulaciones 🦾</h3>
+        <p class="parrafos_sobre"> Esta vista tendrá una lista de todas las simulaciones que ha hecho la empresa, independiente de si se encuentra aprobada, pendiente o rechazada, a modo de que 
+            sirva para entender por qué se rechazaron o aprobaron ciertos tipos de proyecto. Se verá el nombre de la simulación junto al producto, cantidad y fechas como información y un botón de 
+            "Ver Simulación", que al ser apretado envía al usuario a "Resultados de Simulación".
+        </p>
+    </div>
+    <div class="solicita">
+        <h3 class="subtitulo_sobre" id="myreq"> Mis Solicitudes 👍</h3>
+        <p class="parrafos_sobre"> El Usuario Gerente tiene una vista de página en donde le aparecerán todos los usuarios que se registraron en su empresa y su estado de aprobación. Tendrá 
+            acceso a todos los datos públicos del usuario (nombre, email, tipo y estado) y para los usuarios que se encuentren en estado pendiente, le aparecerá un botón de "Aceptar" y otro 
+            de "Rechazar". Al aceptar al usuario este tendrá el rol que está indicado y podrá tener acceso a las simulaciones que se harán.
+        </p>
+    </div>
+    
+</section>
+</div>
+
