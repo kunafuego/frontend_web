@@ -8,6 +8,7 @@ import laboratorio from '../assets/imgs/laboratorio.jpeg';
 import espejo from '../assets/imgs/espejo.jpeg';
 import reciclado from '../assets/imgs/reciclado.jpeg';
 import seguridad from '../assets/imgs/seguridad.jpeg';
+import Navbar from "./navbar";
 
 function Landing(props) {
     const [initial_product, setter_product] = useState("")
@@ -42,14 +43,7 @@ function Landing(props) {
 <div>
 
 <body>
-    <ul className="topnav" id="topnav">
-        <li><a className="active" href="">Inicio</a></li>
-        <li><a href="/nosotros">Sobre Nosotros</a></li>
-        <li><a href="/about">Sobre la Página</a></li>
-        <li><a href="/FAQ">Preguntas Frecuentes</a></li>
-        <li className="right"><a href="/registro">Registrar</a></li>
-        <li className="right"><a href="/inicio_sesion">Iniciar Sesión</a></li>
-    </ul>
+    <Navbar />
 
 <div className="landing">
 

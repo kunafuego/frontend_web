@@ -1,16 +1,10 @@
 import React from 'react'
+import Navbar from './navbar';
 
 function About(props){
     return(  
 <div>
-    <ul class="topnav" id="topnav">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/nosotros">Sobre Nosotros</a></li>
-        <li><a class="active" href="">Sobre la Página</a></li>
-        <li><a href="/FAQ">Preguntas Frecuentes</a></li>
-        <li class="right"><a href="/registro">Registrar</a></li>
-        <li class="right"><a href="/inicio_sesion">Iniciar Sesión</a></li>
-    </ul>
+    <Navbar />
 
     <div class="orden">
     <h1 class="titulo"> Sobre la aplicación</h1>

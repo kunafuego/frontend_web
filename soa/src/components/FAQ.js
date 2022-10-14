@@ -1,17 +1,11 @@
 import React from 'react'
+import Navbar from './navbar';
 
 function FAQ(props){
     return  (
 <div>
     <header>
-    <ul className="topnav" id="topnav">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/nosotros">Sobre Nosotros</a></li>
-        <li><a href="/about">Sobre la Página</a></li>
-        <li><a className="active" href="">Preguntas Frecuentes</a></li>
-        <li className="right"><a href="/registro">Registrar</a></li>
-        <li className="right"><a href="/inicio_sesion">Iniciar Sesión</a></li>
-    </ul>
+        <Navbar />
 
         <h1 class="titulo">Preguntas Frecuentes</h1>
 

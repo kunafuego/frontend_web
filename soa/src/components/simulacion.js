@@ -8,7 +8,7 @@ import seguridad from '../assets/imgs/seguridad.jpeg';
 
 function Simulacion(props){
     const [initial_product, setter_product] = useState("")
-    const [initial_img, setter_img] = useState(empresa)
+    const [simulation_img, setter_img] = useState(empresa)
     const tipo_producto_index = event => {
         const valor = event.target.value
         setter_product(valor)
@@ -112,7 +112,7 @@ function Simulacion(props){
                     </div>
 
                     <div class="outputs">
-                        <img class="foto" id="idfoto" src={initial_img} />
+                        <img class="foto" id="idfoto" src={simulation_img} />
                     </div>
 
                     <div class="parrafo">
