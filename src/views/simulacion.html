@@ -48,12 +48,12 @@
                             </div>
                         </div>
 
-                        <div class="cantidad">
+                        <div class="slidecontainer">
                             <div class="labelcantidad">
-                                <label>Cantidad</label>
+                                <label>Cantidad: <span id="demo"></span></label>
                             </div>
-                            <div class="textocantidad">
-                                <input class="input inputcantidad" type="text" id="idcantidad">
+                            <div class="textoslider">
+                                <input type="range" min="1" max="2500" value="1" class="slider" id="myRange" onchange="sliderInput(this.value)">
                             </div>
                         </div>
 

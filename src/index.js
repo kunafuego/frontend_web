@@ -2,7 +2,7 @@
 // https://stackoverflow.com/questions/11737512/document-getelementbyidbtnid-disabled-is-not-working-in-firefox-and-chrome
 
 window.onload = function(){
-    document.getElementById('idcantidad1').setAttribute("disabled","disabled");
+    document.getElementById('idmyRange1').setAttribute("disabled","disabled");
     document.getElementById('iddateinicio1').setAttribute("disabled","disabled");
     document.getElementById('iddatefin1').setAttribute("disabled","disabled");
   };
@@ -85,3 +85,9 @@ function stickyNavbar() {
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 
 // Función obtenida de https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+
+
+function sliderInput(valor) {
+    document.getElementById("demo").innerHTML = valor;
+    document.getElementById("demo").innerHTML = valor;
+}
