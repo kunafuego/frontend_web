@@ -18,24 +18,42 @@
 </ul>
 
 <div class="orden">
-<h1 class="titulo"> Documentación </h1>
+
+<h1 class="titulo"> Documentación de SOA </h1>
+
+<div class="indice">
+    <div class="title">
+        <h2 class="subtitulo"> Índice </h2>
+    </div>
+    <div class="indice2">
+        <li><a class="link1" href="#descripcion"> Descripción </a></li>
+        <li><a class="link2" href="#objective"> Objetivo </a></li>
+        <li><a class="link3" href="#inscripcion"> Inscripción a SOA </a></li>
+        <li><a class="link4" href="#tipos"> Tipos de usuarios </a></li>
+        <li><a class="link5" href="#sims"> Simulaciones </a></li>
+        <li><a class="link6" href="#results"> Resultados de Simulación </a></li>
+        <li><a class="link7" href="#mysims"> Mis Simulaciones </a></li>
+        <li><a class="link8" href="#myreq"> Mis Solicitudes </a></li>
+    </div>
+</div>
+
 <section id="sobre_la_app">
+
     <div class="historia">
-        <h3 class="subtitulo_sobre"> Historia: 📝</h3>
-        <p class="parrafos_sobre"> Esta aplicación nació de la necesidad de un grupo de compañeros de generar una plataforma donde 
-            se puedan realizar simulaciones sobre la industria del vidrio. Bajo ese contexto, nos surgió la idea de 
-            hacer una plataforma donde distintos agentes de una empresa se puedan comunicar mediante ella. </p>
+        <h3 class="subtitulo_sobre" id="descripcion"> Descripción: 📝</h3>
+        <p class="parrafos_sobre"> SOA es una aplicación ligada a la cadena de producción de vidrio, que facilita información a usuarios registrados 
+            a la plataforma mediante simulaciones de distintos productos de la industria del vidrio. </p>
     </div>
     <div class="mision">
-        <h3 class="subtitulo_sobre"> Nuestra Misión: 🎯</h3>
-        <p class="parrafos_sobre"> Como aplicación queremos ser un centro del manejo de la producción de las empresas de todas las industrias.
-            Por ahora estaremos enfocados solamente en la industria del vidrio como plan piloto, pero esperamos pronto poder 
-            ir migrando a otras áreas de la producción. </p>
+        <h3 class="subtitulo_sobre" id="objective"> Objetivo: 🎯</h3>
+        <p class="parrafos_sobre"> Usted como usuario podrá, mediante el simulador y la información que esta entrega, poder tomar todas las decisiones 
+            ligadas a su empresa a nivel de producción. </p>
     </div>
     <div class="funciona">
-        <h3 class="subtitulo_sobre"> ¿Cómo Funciona? 🤔</h3>
-        <p class="parrafos_sobre"> En un principio, el gerente debe crearse una cuenta de tipo Usuario Gerente, donde podrá
-            ingresar como texto el nombre de su empresa. Una vez que esté registrado, el resto de los usuarios de la empresa podrán
+        <h3 class="subtitulo_sobre" id="inscripcion"> Inscripción a SOA ✍🏽</h3>
+        <p class="parrafos_sobre"> Al ingresar a la página web de SOA, uno podrá ver si le interesa lo que ofrece y tomar la decisión
+            de inscribirse a la plataforma o no. Si decide ser parte de SOA, el gerente de la empresa debe crearse una cuenta de tipo Usuario Gerente, 
+            donde podrá ingresar como texto el nombre de su empresa. Una vez que esté registrado, el resto de los usuarios de la empresa podrán
             registrarse como el tipo de Usuario que deseen (Finanzas, Insumos o Empleos), y cuando presione registrar se le enviará
             automaticamente una request al usuario gerente de esa empresa, indicándole que una cierta persona quiere registrarse a su 
             empresa. El usuario gerente será capaz de aceptar o rechazar esta petición, con lo que el inicio de sesión estaría listo para 
@@ -43,10 +61,62 @@
             Luego, para realizar simulaciones el usuario gerente será capaz de iniciar una, y al momento de hacerla, se le enviará
             esta simulación a todos los usuarios que pertenezcan a la empresa. A cada uno se le mostrará información distinta de la simulación
             dependiendo de su cargo en la empresa. En ese momento, y después de analizar la simulación, los usuarios serán capaces de aceptar
-            o rechazar la simulación hecha por el gerente.
+            o rechazar la simulación hecha por el gerente. </p>
+    </div>
+    <div class="funciona2">
+        <h3 class="subtitulo_sobre" id="tipos"> Tipos de Usuarios 👷</h3>
+        <p class="parrafos_sobre"> Existen cuatro tipos de usuario en SOA y dependiendo del tipo se tendrá diferentes acceso a funcionalidades e 
+            información.
+            <li> Usuario Gerente: Es el único usuario que tiene acceso a todas las funciones e información de SOA, este usuario inicia registrando a su empresa
+                y luego podrá revisar las solicitudes de otros usuarios que se registraron en la misma empresa con cualquiera de los otros roles en la 
+                vista "Mis Solicitudes". Es el único tipo de usuario que puede crear simulaciones en la vista "Simular", y al simular será enviado a la vista de 
+                "Resultados de su Simulación", donde podrá ver toda la información generada por el simulador y tendrá que tomar la decisión de mandarla a los 
+                otros usuarios de la empresa, o volver hacia atras y simular de nuevo. Si es que decide enviar la simulación, esta se guarda en la vista "Mis Simulaciones", 
+                donde aparecerá un listado de todas las simulaciones ligadas a la empresa.
+            </li>
+            <p></p>
+            <li> Usuario Finanzas: Este usuario deberá registrarse en la plataforma solo cuándo sepa que está registrado el Usuario Gerente, si no, no podrá
+                elegir a su empresa en las opciones. Ya registrado, se mandará automaticamente una solicitud de parte del Usuario Finanzas al Usuario Gerente y este último
+                deberá decidir si aprobar o rechazarlo. Si es que se rechaza la solicitud, la cuenta será borrada de la plataforma, en caso contrario se tendrá acceso 
+                a las funcionalidades e información correspondientes. Esto tipo de usuario está ligado a los costos y ganancias asociados a la simulación, podrá acceder a 
+                las simulaciones en la vista "Mis Simulaciones" y solamente tendrá acceso a la información ligada a las finanzas de la simulación, y en base a lo que le 
+                aparece tendrá que aceptar o rechazar la simulación y proveer un feedback en cualquiera de los dos casos indicando las razones de por qué aprobó o rechazó esa simulación.
+            </li>
+            <p></p>
+            <li> Usuario Insumos: Sigue el mismo proceso que el usuario anterior para acceder a la plataforma, la diferencia es que este tipo de usuario ligado a los insumos y 
+                productos de la simulación, podrá acceder a las simulaciones en la vista "Mis Simulaciones" y solamente tendrá acceso a la información ligada a las insumos de 
+                la simulación, y en base a lo que le aparece tendrá que aceptar o rechazar la simulación y proveer un feedback en cualquiera de los dos casos indicando las razones 
+                de por qué aprobó o rechazó esa simulación.
+            </li>
+            <p></p>
+            <li> Usuario Empleos: Sigue el mismo procedimiento que los usuarios Insumos y Finanzas, pero solo tiene acceso a la información ligada a los empleos ligados a la 
+                simulación.
+            </li>
+        </p>
+    </div>
+    <div class="funciona2">
+        <h3 class="subtitulo_sobre" id="sims"> Simulaciones 🕹️</h3>
+        <p class="parrafos_sobre"> Existen cuatro tipos de usuario en SOA y dependiendo del tipo se tendrá diferentes acceso a funcionalidades e 
+        </p>
+    </div>
+    <div class="funciona2" id="results">
+        <h3 class="subtitulo_sobre"> Resultados de Simulación 📈</h3>
+        <p class="parrafos_sobre"> Existen cuatro tipos de usuario en SOA y dependiendo del tipo se tendrá diferentes acceso a funcionalidades e 
+            información.
+        </p>
+    </div>
+    <div class="funciona2">
+        <h3 class="subtitulo_sobre" id="mysims"> Mis Simulaciones 🦾</h3>
+        <p class="parrafos_sobre"> Existen cuatro tipos de usuario en SOA y dependiendo del tipo se tendrá diferentes acceso a funcionalidades e
+        </p>
+    </div>
+    <div class="solicita">
+        <h3 class="subtitulo_sobre" id="myreq"> Mis Solicitudes 👍</h3>
+        <p class="parrafos_sobre"> Existen cuatro tipos de usuario en SOA y dependiendo del tipo se tendrá diferentes acceso a funcionalidades e 
+            información.
         </p>
     </div>
     
-    </section>
+</section>
 </div>
 
