@@ -6,6 +6,10 @@ import Nosotros from './components/nosotros';
 import About from './components/about';
 import Inicio from './components/inicio_sesion';
 import Registro from './components/registro';
+import Historico from './components/historico';
+import Resultados from './components/resultados';
+import Solicitudes from './components/solicitudes';
+import Simulacion from './components/simulacion';
 
 function Routing(){
     return(
@@ -17,6 +21,10 @@ function Routing(){
                 <Route path={'/about'} element={<About/>} />
                 <Route path={'/inicio_sesion'} element={<Inicio/>} />
                 <Route path={'/registro'} element={<Registro/>} />
+                <Route path={'/historico'} element={<Historico/>} />
+                <Route path={'/resultados'} element={<Resultados/>} />
+                <Route path={'/solicitudes'} element={<Solicitudes/>} />
+                <Route path={'/simulacion'} element={<Simulacion/>} />
             </Routes>
         </BrowserRouter>
     )

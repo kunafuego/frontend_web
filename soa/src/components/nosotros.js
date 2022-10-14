@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "./navbar"
+import perfil from '../assets/imgs/perfil.png'
+import perfil_pablo from '../assets/imgs/perfil_pablo.jpeg'
 
 function Nosotros(props) {
     return (
@@ -22,7 +24,7 @@ function Nosotros(props) {
             <section className="grid_nosotros">
                 <div className="domingo">
                     <div className="grid_item_nosotros" id="item_1">
-                        <img className="imagen_nosotros" src="../imgs/perfil.png" />
+                        <img className="imagen_nosotros" src={perfil} />
                         <h3 className="nombre_nosotros"> Domingo Agüero Ureta</h3>
                         <h3 className="cargo_nosotros"> Co-Fundador SOA</h3>
                         <div className="texto_escondido" id="texto_escondido_domingo">
@@ -39,7 +41,7 @@ function Nosotros(props) {
                 <div className="pablo">
 
                     <div className="grid_item_nosotros" id="item_2">
-                        <img className="imagen_nosotros" src="../imgs/perfil_pablo.jpeg" />
+                        <img className="imagen_nosotros" src={perfil_pablo} />
                         <h3 className="nombre_nosotros"> Pablo San Francisco Rolla</h3>
                         <h3 className="cargo_nosotros"> Co-Fundador SOA</h3>
                         <div className="texto_escondido" id="texto_escondido_pablo">

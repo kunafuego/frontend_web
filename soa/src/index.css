@@ -68,7 +68,7 @@ ul.topnav li.right {float: right;}
       rgba(255, 255, 255, 0.35), 
       rgba(255, 255, 255, 0.35)
     ),
-    url(imgs/landing.png);
+    url(assets/imgs/landing.png);
   background-size: cover;
   width: 100vw;
   height: 60vh;

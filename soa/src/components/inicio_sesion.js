@@ -5,10 +5,10 @@ function Inicio(props) {
 <div>
     <header>
         <ul class="topnav">
-            <li><a href="../../index.html">Inicio</a></li>
-            <li><a href="./nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="./about.html">Sobre la Página</a></li>
-            <li><a href="./FAQ.html">Preguntas Frecuentes</a></li>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/nosotros">Sobre Nosotros</a></li>
+            <li><a href="/about">Sobre la Página</a></li>
+            <li><a href="/FAQ">Preguntas Frecuentes</a></li>
             <li class="right"><a href="/registro">Registrar</a></li>
             <li class="right active"><a href="">Iniciar Sesión</a></li>
         </ul>
