@@ -8,7 +8,7 @@
 
 ## Indicaciones Generales
 
-##### 1.  ✅ 
+##### 1.  ✅
 ###### Se hicieron los siguientes cambios solicitados en la reunión de feedback:
 ###### a) Poner foto inicial en la lista de productos
 ###### b) Poner transparencia en foto de fondo
@@ -16,14 +16,14 @@
 ###### d) Alinear contenedor de simulación
 ###### e) Arreglar íconos en index.html
 
-##### 2.
-###### 
+##### 2. ✅
+###### Se encuentran las reglas del Simulador en la vista "Documentación" del archivo documentacion.html.
 
-##### 3.
-###### 
+##### 3. ✅
+###### Se implementa el servidor de la manera pedida. Se utiliza koa-router y se obtiene un JSON con el input del usuario en el caso de la Simulación. 
 
-##### 4.
-###### 
+##### 4. ✅
+###### Están implementados todos los GET's de la base de datos a nivel de servidor y el POST de Simulación. 
 
 ##### 5.
 ######
@@ -31,8 +31,8 @@
 ##### 6.
 ###### 
 
-##### 7.
-######
+##### 7. ✅
+###### ![Modelo Entidad Relación](/modeloER.png "Modelo E/R")
 
 ##### 8.
 ###### 
