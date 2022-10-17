@@ -6,8 +6,7 @@ import laboratorio from '../assets/imgs/laboratorio.jpeg';
 import espejo from '../assets/imgs/espejo.jpeg';
 import reciclado from '../assets/imgs/reciclado.jpeg';
 import seguridad from '../assets/imgs/seguridad.jpeg';
-import Slider from './slider.js';   
-import { Redirect } from 'react-router-dom';
+import Slider from './slider.js';
 export const SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 
@@ -63,7 +62,9 @@ function Simulacion(props){
             fecha_inicio: document.getElementById("iddateinicio").value,
             fecha_fin: document.getElementById("iddatefin").value,
             producción: document.getElementById("sliderid").value,
-            producto: document.getElementById("tipo_producto").value
+            producto: document.getElementById("tipo_producto").value,
+            tipo: 'Gerente',
+            id_empresa: 3
         };
         await axios
         .post(url, body)
@@ -85,7 +86,7 @@ function Simulacion(props){
     <li><a href="/historico">Mis Simulaciones</a></li>
     <li><a href="/solicitudes">Mis Solicitudes</a></li>
 
-    <li className="right"><a href="../../index.html">Cerrar Sesión</a></li>
+    <li className="right"><a href="/">Cerrar Sesión</a></li>
 </ul>
 
 <body>
