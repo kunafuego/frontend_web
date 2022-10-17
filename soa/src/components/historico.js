@@ -43,3 +43,23 @@ function Historico(props){
 }
 
 export default Historico
+
+// const newPlay = async () => {
+//     const tiles = document.getElementsByClassName("Tile")
+//     const url = `${SERVER_URL}/plays`;
+//     const body = {
+//       x: 0,
+//       y: 1,
+//       player: playerId,
+//       match_id: matchId,
+//     };
+//     await axios
+//       .post(url, body)
+//       .then((response) => {
+//         alert(` JUGADA CONCRETADA EN (${body.x}, ${body.y})`);
+//         tiles[body.x * 3 + body.y].firstElementChild.innerText = "X"
+//       })
+//       .catch((error) =>
+//         alert(`[${error.response.status}] ${error.response.data}`)
+//       );
+//   };

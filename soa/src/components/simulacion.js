@@ -1,16 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import empresa from '../assets/imgs/empresa.jpeg';
 import mueble from '../assets/imgs/mueble.jpeg';
 import laboratorio from '../assets/imgs/laboratorio.jpeg';
 import espejo from '../assets/imgs/espejo.jpeg';
 import reciclado from '../assets/imgs/reciclado.jpeg';
 import seguridad from '../assets/imgs/seguridad.jpeg';
+import Slider from './slider.js';   
+import { Redirect } from 'react-router-dom';
+export const SERVER_URL = process.env.REACT_APP_SERVER_URL;
+
 
 function Simulacion(props){
     const [initial_product, setter_product] = useState("")
+    const [product_lists, setProducts] = useState([])
     const [simulation_img, setter_img] = useState(empresa)
     const tipo_producto_index = event => {
         const valor = event.target.value
+        console.log("CAMBIANDO TIPO PRODUCTO")
         setter_product(valor)
         if (valor == "mueble"){
             document.getElementById("idparrafo").innerHTML = "Estos muebles utilizan un sistema de pegado ultravioleta invisible, líquido e incoloro. Se puede pegar vidrio con vidrio o vidrio con acero. Su principal característica es proyectar transparencia y claridad al interior del lugar incorporando la más alta calidad y tecnología en el proceso de pegado de cristales."
@@ -33,77 +40,124 @@ function Simulacion(props){
         }
     }
 
+    useEffect( () => {
+        const get_products = async () => {
+        const url = `${process.env.REACT_APP_SERVER_URL}/productos`;
+        await axios
+        .get(url)
+        .then((response) => {
+            setProducts(response.data);
+        })
+        .catch((error) =>
+        alert(`[${error.response.status}] ${error.response.data}`)
+        );
+    };
+        get_products();
+    }, []);
+
+
+
+    const newSimulation = async (event) => {
+        const url = `${SERVER_URL}/simulacions/new`;
+        const body = {
+            nombre: document.getElementById("nombre_simulacion_id").value,
+            fecha_inicio: document.getElementById("iddateinicio").value,
+            fecha_fin: document.getElementById("iddatefin").value,
+            produccion: document.getElementById("sliderid").value,
+            producto: document.getElementById("tipo_producto").value
+        };
+        await axios
+        .post(url, body)
+        .then((response) => {
+            // <Redirect to='/historico' />
+        })
+        .catch((error) =>
+            alert(`[${error.response.status}] ${error.response.data}`)
+        );
+        event.stopPropagation();
+    };
+
 
     return  (
 <div>
  
-<ul class="topnav">
-    <li><a class="active" href="">Simular</a></li>
+<ul className="topnav">
+    <li><a className="active" href="">Simular</a></li>
     <li><a href="/historico">Mis Simulaciones</a></li>
     <li><a href="/solicitudes">Mis Solicitudes</a></li>
 
-    <li class="right"><a href="../../index.html">Cerrar Sesión</a></li>
+    <li className="right"><a href="../../index.html">Cerrar Sesión</a></li>
 </ul>
 
 <body>
 
-    <header class="header">
-        <h1 class="titulo">
+    <header className="header">
+        <h1 className="titulo">
             Simulador de Vidrio SOA
         </h1>
     </header>
 
-    <section class="lineamiento">
-        <form class="conboton">
+    <section className="lineamiento">
+        <form className="conboton">
 
-            <div class="todo">
+            <div className="todo">
 
-                <div class="arriba">
+                <div className="arriba">
 
-                    <div class="inputs">
+                    <div className="inputs">
                     
-                        <div class="producto">
-                            <div class="labelproducto">
+                        <div className="nombre">
+                            <div className="labelnombre">
+                                <label >Nombre</label>
+                            </div>
+                            
+                            <div className="nombre_simulacion">
+                                <input className="nombre_input" type="text" id="nombre_simulacion_id"/>
+                            </div>
+                        </div>
+
+                        <div className="producto">
+                            <div className="labelproducto">
                                 <label>Tipo de Producto</label>
                             </div>
-                            <div class="seleccionproducto">
-                                <select class="seleccionar" id="tipo_usuario" onChange={tipo_producto_index}>
-                                    <option value="inputproducto">Lista de Productos</option>
-                                    <option value="mueble">Muebles de vidrio</option>
-                                    <option value="lyf">Laboratorio y Farmacia</option>
-                                    <option value="espejo">Espejos</option>
-                                    <option value="reciclado">Vidrio Reciclado</option>
-                                    <option value="seguridad">Vidrio de seguridad</option>
+                            <div className="seleccionproducto">
+                                <select className="seleccionar" id="tipo_producto" onChange={tipo_producto_index}>
+                                {product_lists.map((product) => {
+                                    return (
+                                        <option value={product.nombre}>{product.nombre}</option>
+                                    );
+                                })}
                                 </select>
                             </div>
                         </div>
 
-                        <div class="cantidad">
-                            <div class="labelcantidad">
-                                <label>Cantidad</label>
+                        <div className="slidecontainer">
+                            {/* <div className="labelcantidad">
+                                <label>Cantidad: <span id="demo"></span></label>
                             </div>
-                            <div class="textocantidad">
-                                <input class="input inputcantidad" type="text" id="idcantidad" />
-                            </div>
+                            <div className="textoslider">
+                                <input type="range" min="1" max="2500" value="1" className="slider" id="myRange" onChange={sliderInput}/>
+                            </div> */}
+                            <Slider />
                         </div>
 
-                        <div class="fechas">
+                        <div className="fechas">
 
-                            <div class="fechainicio">
-                                <div class="labelfechainicio">
+                            <div className="fechainicio">
+                                <div className="labelfechainicio">
                                     <label>Fecha Inicio</label>
                                 </div>
-                                <div class="textoinicio">
-                                    <input class="input inputdateinicio" type="date" id="iddateinicio" />
+                                <div className="textoinicio">
+                                    <input className="input inputdateinicio" type="date" id="iddateinicio" />
                                 </div>
                             </div>
 
-                            <div class="fechafin">
-                                <div class="labelfechafin">
+                            <div className="fechafin">
+                                <div className="labelfechafin">
                                     <label>Fecha Fin</label>
                                 </div>
-                                <div class="textofin">
-                                    <input class="input inputdatefin" type="date" id="iddatefin" />
+                                <div className="textofin">
+                                    <input className="input inputdatefin" type="date" id="iddatefin" />
                                 </div>
                             </div>
 
@@ -111,19 +165,19 @@ function Simulacion(props){
 
                     </div>
 
-                    <div class="outputs">
-                        <img class="foto" id="idfoto" src={simulation_img} />
+                    <div className="outputs">
+                        <img className="foto" id="idfoto" src={simulation_img} />
                     </div>
 
-                    <div class="parrafo">
-                        <label class="descripcion" id="idparrafo">Bienvenido al simulador de SOA, para poder utilizarlo debe elegir un producto de la lista de productos, rellenar con la cantidad de unidades que desea producir y finalmente el rango de fechas que le gustaría dar a su proyecto</label>
+                    <div className="parrafo">
+                        <label className="descripcion" id="idparrafo">Bienvenido al simulador de SOA, para poder utilizarlo debe elegir un producto de la lista de productos, rellenar con la cantidad de unidades que desea producir y finalmente el rango de fechas que le gustaría dar a su proyecto</label>
                     </div>
 
                 </div>
 
-                <div class="boton">
+                <div className="boton">
                     {/* <!-- https://getcssscan.com/css-buttons-examples -->  */}
-                    <button class="button-86" id="idbotoncalcular" type="button" onclick="window.location.href='./resultados.html';">Calcular</button>
+                    <button className="button-86" id="idbotoncalcular" type="button" onClick={newSimulation}>Calcular</button>
     
                 </div>
 
