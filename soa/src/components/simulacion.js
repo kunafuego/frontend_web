@@ -17,7 +17,6 @@ function Simulacion(props){
     const [simulation_img, setter_img] = useState(empresa)
     const tipo_producto_index = event => {
         const valor = event.target.value
-        console.log("CAMBIANDO TIPO PRODUCTO")
         setter_product(valor)
         if (valor == "mueble"){
             document.getElementById("idparrafo").innerHTML = "Estos muebles utilizan un sistema de pegado ultravioleta invisible, líquido e incoloro. Se puede pegar vidrio con vidrio o vidrio con acero. Su principal característica es proyectar transparencia y claridad al interior del lugar incorporando la más alta calidad y tecnología en el proceso de pegado de cristales."
