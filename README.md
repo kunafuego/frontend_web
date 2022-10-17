@@ -36,9 +36,9 @@
 
 ##### 8. ✅
 ###### La BDD se implementa como localhost. Para poder implementarla localmente, se debe crear un archivo .env en el backend con credenciales:
-###### DB_USER=<usuario de base de datos creado>
-###### DB_NAME=<nombre de base de datos creada>
-###### DB_PASSWORD=<contraseña implementada>
+###### DB_USER=<usuario_de_base_de_datos_creado>
+###### DB_NAME=<nombre_de_base_de_datos_creada>
+###### DB_PASSWORD=<contraseña_implementada>
 ###### SB_HOST=localhost
 ###### Y luego correr el siguiente comando:
 ###### npx sequelize-cli db:migrate (Para que se implemente el modelo en la base de datos)
