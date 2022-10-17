@@ -89,5 +89,4 @@ function stickyNavbar() {
 
 function sliderInput(valor) {
     document.getElementById("demo").innerHTML = valor;
-    document.getElementById("demo").innerHTML = valor;
 }
