@@ -23,10 +23,10 @@
 ###### Se implementa el servidor de la manera pedida. Se utiliza koa-router y se obtiene un JSON con el input del usuario en el caso de la Simulación. 
 
 ##### 4. ✅
-###### Están implementados todos los GET's de la base de datos a nivel de servidor y el POST de Simulación. 
+###### Están implementados todos los GET's de la base de datos a nivel de servidor y el POST de Simulación. Para la simulación, sólo se puede poner una fecha de inicio que sea menor que la final y esta debe tener un nombre, esto es que no se puede dejar en blanco. Decidimos que sí se pueden usar fechas anteriores a la actual ya que esa es la idea de un simulador, no tiene que ser absolutamente realista. El slider en todo minuto tiene un valor asociado, por lo que todos los inputs se validan a la hora de simular. Además se devuelve el código de error correspondiente al error.
 
 ##### 5.
-######
+###### 
 
 ##### 6.
 ###### 
@@ -52,7 +52,8 @@
 ###### Se pasó una gran parte de la aplicación y funcionalidades a REACT, el POST de simulación funciona solo en REACT. Para poder hacer la conexión, se debe hacer todo lo estipulado en los puntos 8 y 11
 
 ##### 11. ✅
-###### Para la entrega se puede acceder estáticamente a la aplicación mediante el archivo index.html o con react, utilizando "soa" como directorio raiz y correr "npm start"
+###### Para la entrega se puede acceder estáticamente a la aplicación mediante el archivo index.html o con react, utilizando "soa" como directorio raiz y correr "npm start". Además se debe agregar en el archivo .env: 
+##### REACT_APP_SERVER_URL="http://localhost:XXXX" (nosotros utilizamos 8000)
 
 ##### 12. ✅
 ###### Se cumple con lo pedido en el enunciado
