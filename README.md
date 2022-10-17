@@ -25,11 +25,11 @@
 ##### 4. ✅
 ###### Están implementados todos los GET's de la base de datos a nivel de servidor y el POST de Simulación. Para la simulación, sólo se puede poner una fecha de inicio que sea menor que la final y esta debe tener un nombre, esto es que no se puede dejar en blanco. Decidimos que sí se pueden usar fechas anteriores a la actual ya que esa es la idea de un simulador, no tiene que ser absolutamente realista. El slider en todo minuto tiene un valor asociado, por lo que todos los inputs se validan a la hora de simular. Además se devuelve el código de error correspondiente al error.
 
-##### 5.
-###### 
+##### 5. ✅
+###### Como la simulación no es por turnos, la única parte donde es necesario el JSON es para la simulación en sí (fuera de el registro y login que no son pedidos para esta entrega), que se encuentra en el componente simulacion.js de la carpeta soa. Por lo que acá se identifica cuál es la empresa asociada y cual es el tipo de usuario. En el backend se tiene implementado utilizar esta empresa para el post y si el usuario no es de tipo 'Gerente', no se permite simular.
 
-##### 6.
-###### 
+##### 6. ✅
+###### El punto anterior es válido tanto para front, como para back, en dónde se puede filtrar por empresa en las Simulaciones Históricas dependiendo del usuario. Todo esto se puede ver en el archivo de simulaciones en el back-end.
 
 ##### 7. ✅
 ###### ![Modelo Entidad Relación](/src/assets/imgs/modeloER.png "Modelo E/R")
