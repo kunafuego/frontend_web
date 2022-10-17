@@ -529,7 +529,21 @@ ul.topnav li.right {float: right;}
   background-color: white;
 }
 
+.tabla_simulaciones {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+.tabla_s {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
 
 

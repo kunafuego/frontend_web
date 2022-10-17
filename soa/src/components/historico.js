@@ -29,37 +29,34 @@ function Historico(props){
         <li className="right"><a href="/">Cerrar Sesión</a></li>
     </ul>
 
-    <h1>SIMULACIONES HISTÓRICAS HTML</h1>
+    <h1 className='titulo'>Simulaciones Históricas</h1>
 
-    {simulaciones.map((simulacion) => {
-       return (
-          <div className="post-card" key={simulacion.id}>
-             <h2 className="post-title">{simulacion.nombre}</h2>
-             </div>
-       );
-    })}
+
+    <table className='tabla_simulaciones'> 
+        <tr>
+            <th className='tabla_s'> Nombre </th>
+            <th className='tabla_s'> Unidades a Producir </th>
+            <th className='tabla_s'> Costo </th>
+            <th className='tabla_s'> Empleos </th>
+            <th className='tabla_s'> Fecha Incio </th>
+            <th className='tabla_s'> Fecha término </th>
+        </tr>
+        {simulaciones.map((simulacion) => {
+        return (
+            <tr>
+                <td className='tabla_s'>{simulacion.nombre}</td>
+                <td className='tabla_s'>{simulacion.producción}</td>
+                <td className='tabla_s'>{simulacion.costo}</td>
+                <td className='tabla_s'>{simulacion.empleos}</td>
+                <td className='tabla_s'>{simulacion.fecha_inicio.toString()}</td>
+                <td className='tabla_s'>{simulacion.fecha_fin.toString()}</td>
+            </tr>
+        );
+        })}
+    </table>
+
 </div>  
 )
 }
 
 export default Historico
-
-// const newPlay = async () => {
-//     const tiles = document.getElementsByClassName("Tile")
-//     const url = `${SERVER_URL}/plays`;
-//     const body = {
-//       x: 0,
-//       y: 1,
-//       player: playerId,
-//       match_id: matchId,
-//     };
-//     await axios
-//       .post(url, body)
-//       .then((response) => {
-//         alert(` JUGADA CONCRETADA EN (${body.x}, ${body.y})`);
-//         tiles[body.x * 3 + body.y].firstElementChild.innerText = "X"
-//       })
-//       .catch((error) =>
-//         alert(`[${error.response.status}] ${error.response.data}`)
-//       );
-//   };

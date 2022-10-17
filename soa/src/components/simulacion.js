@@ -62,7 +62,7 @@ function Simulacion(props){
             nombre: document.getElementById("nombre_simulacion_id").value,
             fecha_inicio: document.getElementById("iddateinicio").value,
             fecha_fin: document.getElementById("iddatefin").value,
-            produccion: document.getElementById("sliderid").value,
+            producción: document.getElementById("sliderid").value,
             producto: document.getElementById("tipo_producto").value
         };
         await axios
