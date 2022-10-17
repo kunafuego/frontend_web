@@ -65,32 +65,32 @@
 
 ## Bandas Back-End
 
-#### D: 
-##### 
+#### D: ✅
+##### Se implementa el modelo completo y se establece una conexíon entre front y back
 
-#### C: 
-##### 
+#### C: ✅
+##### Hay un GET funcional de las Simulaciones Históricas y un POST funcional para poder simular
 
-#### B:
-##### 
+#### B: ✅
+##### Se implementa correctamente
 
-#### A:
-##### 
+#### A: ✅
+##### Se utiliza eslint y Gitflow de manera adecuada
 
 ## Bandas Front-End
 
-#### C: 
-##### 
+#### C: ✅
+##### Se migra gran parte de la aplicación a REACT, y se puede hacer una simulación desde el front, que luego será guardado en simulaciones históricas.
 
-#### B:
-##### 
+#### B: ✅
+##### Están casi todos los componentes implementados
 
-#### A:
-##### 
+#### A: ✅
+##### Se implementa un slider a nivel de react que permite elegir la cantidad de producto que se desea simular
 
 
 ## Referencias de código externo :book:
-#### 
+#### Se encuentran en cada archivo junto a el código
 
 
 
