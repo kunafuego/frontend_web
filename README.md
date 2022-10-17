@@ -32,25 +32,36 @@
 ###### 
 
 ##### 7. ✅
-###### ![Modelo Entidad Relación](/modeloER.png "Modelo E/R")
+###### ![Modelo Entidad Relación](/src/assets/imgs/modeloER.png "Modelo E/R")
 
-##### 8.
-###### 
+##### 8. ✅
+###### La BDD se implementa como localhost. Para poder implementarla localmente, se debe crear un archivo .env en el backend con credenciales:
+###### DB_USER=<usuario de base de datos creado>
+###### DB_NAME=<nombre de base de datos creada>
+###### DB_PASSWORD=<contraseña implementada>
+###### SB_HOST=localhost
+###### Y luego correr el siguiente comando:
+###### npx sequelize-cli db:migrate (Para que se implemente el modelo en la base de datos)
+###### npx sequelize-cli db:seed:all (Para que se inserten las seeds)
 
-##### 9.
-###### 
+##### 9. ✅
+###### El link para el backend de la aplicación es el siguiente:
+##### https://github.com/IIC2513-2022-2/grupo-aguero_sanfco-backend
 
-##### 10.
-###### 
+##### 10. ✅
+###### Se pasó una gran parte de la aplicación y funcionalidades a REACT, el POST de simulación funciona solo en REACT. Para poder hacer la conexión, se debe hacer todo lo estipulado en los puntos 8 y 11
 
-##### 11.
-###### 
+##### 11. ✅
+###### Para la entrega se puede acceder estáticamente a la aplicación mediante el archivo index.html o con react, utilizando "soa" como directorio raiz y correr "npm start"
 
-##### 12.
-###### 
+##### 12. ✅
+###### Se cumple con lo pedido en el enunciado
 
-##### 13.
-###### 
+##### 13. ✅
+###### Se utiliza eslint para asegurar la utilización de la guía de estilos
+
+##### 14. ✅
+###### Se utilizaron branches y commits descriptivos durante la entrga
 
 ## Bandas Back-End
 
