@@ -1,37 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import { Navigate, useNavigate } from 'react-router-dom';
+import Navbar from "./navbar";
+import useCookieAuth from "../hoooks/useCookieAuth";
+
 
 function Inicio(props) {
+    const [mail, setMail] = useState("");
+    const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+
+    const { handleUserLogin } = useCookieAuth();
+
+    const userValidation = async (e) => {
+        e.preventDefault();
+        const response = await axios
+            .post(`${process.env.REACT_APP_SERVER_URL}/auth/login`, {
+            "email": mail,
+            "password": password
+        });
+        if (!response.data.error) {
+            handleUserLogin();
+            navigate("/");
+        } else {
+            console.log(response.data.error);
+        }
+    }
+
     return (
 <div>
-    <header>
-        <ul class="topnav">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/nosotros">Sobre Nosotros</a></li>
-            <li><a href="/about">Sobre la Página</a></li>
-            <li><a href="/FAQ">Preguntas Frecuentes</a></li>
-            <li class="right"><a href="/registro">Registrar</a></li>
-            <li class="right active"><a href="">Iniciar Sesión</a></li>
-        </ul>
-    </header>  
-    <body>
-        <div class="cuerpo_inicio">
-            <form id="formulario_sesion">
+    <Navbar />
+        <div className="cuerpo_inicio">
+            <form id="formulario_sesion" onSubmit={userValidation}>
                 <h1 id="titulo_sesion">Iniciar Sesión</h1>
 
-                <fieldset class="esquema_inicio">
-                    <label class="labels" for="name">Email:</label>
-                    <input type="text" id="nombre" />
+                <fieldset className="esquema_inicio">
+                    <label className="labels">Email:</label>
+                    <input type="text" placeholder="Correo electrónico" value={mail} onChange={(e) => setMail(e.target.value)} required />
                     
-                    <label class="labels" for="mail">Contraseña:</label>
-                    <input type="password" id="mail" name="user_email" />
+                    <label className="labels">Contraseña:</label>
+                    <input type="password" placeholder="Contaseña" value={password} onChange={(e) => setPassword(e.target.value)} required/>
 
-                    <button onclick="window.location.href='./home.html';" type="submit" class="submit_button">Iniciar Sesión</button>
+                    <input type="submit" className="submit_button" valiue="Iniciar Sesión" />
                 </fieldset>
                 
             </form>
         </div>
     
-    </body>
 </div>
 )
 }

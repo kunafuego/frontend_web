@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Navbar from './navbar';
 
 function Historico(props){
 
@@ -22,12 +23,7 @@ function Historico(props){
 
     return  (
 <div>
-    <ul className="topnav">
-        <li><a href="/simulacion">Simular</a></li>
-        <li><a className="active" href="">Mis Simulaciones</a></li>
-        <li><a href="/solicitudes">Mis Solicitudes</a></li>
-        <li className="right"><a href="/">Cerrar Sesión</a></li>
-    </ul>
+    <Navbar />
 
     <h1 className='titulo'>Simulaciones Históricas</h1>
 

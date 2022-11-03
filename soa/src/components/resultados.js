@@ -1,15 +1,10 @@
 import React from 'react'
+import Navbar from './navbar'
 
 function Resultados(props){
     return  (
 <div>
-    <ul class="topnav">
-        <li><a href="./simulacion.html">Simular</a></li>
-        <li><a href="./historico.html">Mis Simulaciones</a></li>
-        <li><a href="./solicitudes.html">Mis Solicitudes</a></li>
-
-        <li class="right"><a href="../../index.html">Cerrar Sesión</a></li>
-    </ul>
+    <Navbar />
 
     <body>
 

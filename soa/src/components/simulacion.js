@@ -7,6 +7,7 @@ import espejo from '../assets/imgs/espejo.jpeg';
 import reciclado from '../assets/imgs/reciclado.jpeg';
 import seguridad from '../assets/imgs/seguridad.jpeg';
 import Slider from './slider.js';
+import Navbar from './navbar';
 export const SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 
@@ -81,15 +82,8 @@ function Simulacion(props){
     return  (
 <div>
  
-<ul className="topnav">
-    <li><a className="active" href="">Simular</a></li>
-    <li><a href="/historico">Mis Simulaciones</a></li>
-    <li><a href="/solicitudes">Mis Solicitudes</a></li>
+    <Navbar />
 
-    <li className="right"><a href="/">Cerrar Sesión</a></li>
-</ul>
-
-<body>
 
     <header className="header">
         <h1 className="titulo">
@@ -108,7 +102,7 @@ function Simulacion(props){
                     
                         <div className="nombre">
                             <div className="labelnombre">
-                                <label >Nombre</label>
+                                <label >Nombre Simulación</label>
                             </div>
                             
                             <div className="nombre_simulacion">
@@ -132,12 +126,6 @@ function Simulacion(props){
                         </div>
 
                         <div className="slidecontainer">
-                            {/* <div className="labelcantidad">
-                                <label>Cantidad: <span id="demo"></span></label>
-                            </div>
-                            <div className="textoslider">
-                                <input type="range" min="1" max="2500" value="1" className="slider" id="myRange" onChange={sliderInput}/>
-                            </div> */}
                             <Slider />
                         </div>
 
@@ -186,9 +174,8 @@ function Simulacion(props){
         </form>
 
     </section>
-</body>
 </div>  
-    )
+)
 }
 
 export default Simulacion

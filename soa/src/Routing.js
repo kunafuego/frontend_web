@@ -10,22 +10,25 @@ import Historico from './components/historico';
 import Resultados from './components/resultados';
 import Solicitudes from './components/solicitudes';
 import Simulacion from './components/simulacion';
+import CookieAuthProvider from './contexts/cookieAuth';
 
 function Routing(){
     return(
         <BrowserRouter>
-            <Routes>
-                <Route path={'/'} element={<Landing/>} />
-                <Route path={'/FAQ'} element={<FAQ/>} />
-                <Route path={'/nosotros'} element={<Nosotros/>} />
-                <Route path={'/about'} element={<About/>} />
-                <Route path={'/inicio_sesion'} element={<Inicio/>} />
-                <Route path={'/registro'} element={<Registro/>} />
-                <Route path={'/historico'} element={<Historico/>} />
-                <Route path={'/resultados'} element={<Resultados/>} />
-                <Route path={'/solicitudes'} element={<Solicitudes/>} />
-                <Route path={'/simulacion'} element={<Simulacion/>} />
-            </Routes>
+            <CookieAuthProvider>
+                <Routes>
+                    <Route path={'/'} element={<Landing/>} />
+                    <Route path={'/FAQ'} element={<FAQ/>} />
+                    <Route path={'/nosotros'} element={<Nosotros/>} />
+                    <Route path={'/about'} element={<About/>} />
+                    <Route path={'/inicio_sesion'} element={<Inicio/>} />
+                    <Route path={'/registro'} element={<Registro/>} />
+                    <Route path={'/historico'} element={<Historico/>} />
+                    <Route path={'/resultados'} element={<Resultados/>} />
+                    <Route path={'/solicitudes'} element={<Solicitudes/>} />
+                    <Route path={'/simulacion'} element={<Simulacion/>} />
+                </Routes>
+            </CookieAuthProvider>
         </BrowserRouter>
     )
 }
