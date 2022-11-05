@@ -55,9 +55,9 @@ function Landing(props) {
         .then((response) => {
             setProducts(response.data);
         })
-        .catch((error) =>
-        alert(`[${error.response.status}] ${error.response.data}`)
-        );
+        //  .catch((error) =>
+        // alert(`[${error.response.status}] ${error.response.data}`)
+        //  );
     };
         get_products();
     }, []);
@@ -118,12 +118,6 @@ function Landing(props) {
             <div className = "boton_grid">
                 <button onClick={event => window.location.href='/registro'} className="button-73"> Registrar</button>
             </div>
-        </div>
-    </div>
-
-    <div className="lower">
-        <div className = "descripcion">
-            <button onClick={event => window.location.href='/simulacion'} className="button-46" >Homepage para usuario loggeado</button>
         </div>
     </div>
 

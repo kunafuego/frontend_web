@@ -1,4 +1,4 @@
-import { createContext, useState, useMemo, React } from "react";
+import { createContext, useState, useEffect, useMemo } from "react";
 import Cookies from "js-cookie";
 
 export const cookieAuth = createContext();
@@ -12,24 +12,27 @@ const CookieAuthProvider = ({ children }) => {
             setCurrentUser(true);
         }
     };
-    
+
     const handleUserLogout = () => {
         setCurrentUser(false);
-        console.log("SETEANDO CURRENT USER A FALSE")
         Cookies.remove("koa.sess");
         Cookies.remove("koa.sess.sig");
     };
-    
+
+    useEffect(() => {
+        handleUserLogin()}, [currentUser, handleUserLogin, handleUserLogout],
+    );
+
     const userStatus = useMemo(
         () => ({ currentUser, handleUserLogin, handleUserLogout }),
         [currentUser, handleUserLogin, handleUserLogout],
-        );
-    
-        return (
-            <cookieAuth.Provider value={userStatus}>
-                {children}
-            </cookieAuth.Provider>
-        );
+    );
+
+    return (
+        <cookieAuth.Provider value={userStatus}>
+            {children}
+        </cookieAuth.Provider>
+    );
 };
-    
+  
 export default CookieAuthProvider;

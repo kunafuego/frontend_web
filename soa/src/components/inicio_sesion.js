@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Navigate, useNavigate } from 'react-router-dom';
 import Navbar from "./navbar";
-import useCookieAuth from "../hoooks/useCookieAuth";
+import useCookieAuth from "../hooks/useCookieAuth";
 
 
 function Inicio(props) {
@@ -21,7 +21,7 @@ function Inicio(props) {
         });
         if (!response.data.error) {
             handleUserLogin();
-            navigate("/");
+            navigate("/simulacion");
         } else {
             console.log(response.data.error);
         }
@@ -41,7 +41,7 @@ function Inicio(props) {
                     <label className="labels">Contraseña:</label>
                     <input type="password" placeholder="Contaseña" value={password} onChange={(e) => setPassword(e.target.value)} required/>
 
-                    <input type="submit" className="submit_button" valiue="Iniciar Sesión" />
+                    <input type="submit" className="submit_button" value="Iniciar Sesión" />
                 </fieldset>
                 
             </form>
