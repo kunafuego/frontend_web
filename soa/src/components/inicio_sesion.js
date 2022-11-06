@@ -13,17 +13,19 @@ function Inicio(props) {
     const { handleUserLogin } = useCookieAuth();
 
     const userValidation = async (e) => {
-        e.preventDefault();
-        const response = await axios
-            .post(`${process.env.REACT_APP_SERVER_URL}/auth/login`, {
-            "email": mail,
-            "password": password
-        });
-        if (!response.data.error) {
-            handleUserLogin();
-            navigate("/simulacion");
-        } else {
-            console.log(response.data.error);
+        try {
+            e.preventDefault();
+            const response = await axios
+                .post(`${process.env.REACT_APP_SERVER_URL}/auth/login`, {
+                "email": mail,
+                "password": password
+            });
+            if (!response.data.error) {
+                handleUserLogin();
+                navigate("/simulacion");
+        }
+        } catch(error) {
+            alert(`[${error.response.status}] ${error.response.data}`)
         }
     }
 

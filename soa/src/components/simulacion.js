@@ -8,6 +8,7 @@ import reciclado from '../assets/imgs/reciclado.jpeg';
 import seguridad from '../assets/imgs/seguridad.jpeg';
 import Slider from './slider.js';
 import Navbar from './navbar';
+import { Navigate, useNavigate } from 'react-router-dom';
 export const SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 
@@ -15,6 +16,7 @@ function Simulacion(props){
     const [initial_product, setter_product] = useState("")
     const [product_lists, setProducts] = useState([])
     const [simulation_img, setter_img] = useState(empresa)
+    const navigate = useNavigate();
     const tipo_producto_index = event => {
         const valor = event.target.value
         setter_product(valor)
@@ -70,7 +72,7 @@ function Simulacion(props){
         await axios
         .post(url, body)
         .then((response) => {
-            // <Redirect to='/historico' />
+            navigate("/historico");
         })
         .catch((error) =>
             alert(`[${error.response.status}] ${error.response.data}`)

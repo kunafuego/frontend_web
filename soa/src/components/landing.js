@@ -55,9 +55,9 @@ function Landing(props) {
         .then((response) => {
             setProducts(response.data);
         })
-        //  .catch((error) =>
-        // alert(`[${error.response.status}] ${error.response.data}`)
-        //  );
+        // .catch((error) =>
+        //     alert(`[${error.response.status}] ${error.response.data}`)
+        // );
     };
         get_products();
     }, []);

@@ -18,21 +18,25 @@ function Registro(props) {
     const { handleUserLogin } = useCookieAuth();
 
     const userRegister = async (e) => {
-        e.preventDefault();
-        const response = await axios
-            .post(`${process.env.REACT_APP_SERVER_URL}/auth/signup`, {
-            "tipo": tipo,
-            "estado_solicitud": estado_solicitud,
-            "nombre": nombre,
-            "email": mail,
-            "contrasena": password,
-            "contrasena2": password2,
-            "nombre_empresa": empresa,
-        });
-        if (!response.data.error) {
-            navigate("/");
-        } else {
-            console.log(response.data.error);
+        try {
+            e.preventDefault();
+            const response = await axios
+                .post(`${process.env.REACT_APP_SERVER_URL}/auth/signup`, {
+                "tipo": tipo,
+                "estado_solicitud": estado_solicitud,
+                "nombre": nombre,
+                "email": mail,
+                "contrasena": password,
+                "contrasena2": password2,
+                "nombre_empresa": empresa,
+            });
+            if (!response.data.error) {
+                navigate("/");
+            } else {
+                console.log(response.data.error);
+            }
+        } catch(error) {
+            alert(`[${error.response.status}] ${error.response.data}`)
         }
     }
 
