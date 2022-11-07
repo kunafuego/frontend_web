@@ -11,12 +11,18 @@ import seguridad from '../assets/imgs/seguridad.jpeg';
 import axios from 'axios';
 import Slider from './slider.js';   
 import Navbar from "./navbar";
+import { useNavigate } from "react-router-dom";
 export const SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 function Landing(props) {
     const [initial_product, setter_product] = useState("")
     const [product_lists, setProducts] = useState([])
     const [simulation_img, setter_img] = useState(empresa)
+
+    const handleButton = (e) => {
+        
+    }
+
     const tipo_producto_index = event => {
         const valor = event.target.value
         setter_product(valor)
@@ -49,9 +55,9 @@ function Landing(props) {
         .then((response) => {
             setProducts(response.data);
         })
-        .catch((error) =>
-        alert(`[${error.response.status}] ${error.response.data}`)
-        );
+        // .catch((error) =>
+        //     alert(`[${error.response.status}] ${error.response.data}`)
+        // );
     };
         get_products();
     }, []);
@@ -61,7 +67,6 @@ function Landing(props) {
     return(     
 <div>
 
-<body>
     <Navbar />
 
 <div className="landing">
@@ -108,17 +113,11 @@ function Landing(props) {
                 <h2>Si deseas acceder a la simulación, sigue a alguna de estas dos rutas:</h2>
             </div>
             <div className = "boton_grid">
-                <button onclick="window.location.href='./src/views/inicio_sesion.html';" className="button-72" >Iniciar Sesión</button>
+                <button onClick={event => window.location.href='/inicio_sesion'} className="button-72" >Iniciar Sesión</button>
             </div>
             <div className = "boton_grid">
-                <button onclick="window.location.href='./src/views/registro.html';" className="button-73"> Registrar</button>
+                <button onClick={event => window.location.href='/registro'} className="button-73"> Registrar</button>
             </div>
-        </div>
-    </div>
-
-    <div className="lower">
-        <div className = "descripcion">
-            <button onClick={event => window.location.href='/simulacion'} className="button-46" >Homepage para usuario loggeado</button>
         </div>
     </div>
 
@@ -145,12 +144,6 @@ function Landing(props) {
                             </div>
 
                             <div className="slidecontainer">
-                                {/* <div className="labelcantidad">
-                                    <label>Cantidad: <span id="demo"></span></label>
-                                </div>
-                                <div className="textoslider">
-                                    <input type="range" min="1" max="2500" value="1" className="slider" id="myRange" onChange={sliderInput}/>
-                                </div> */}
                                 <Slider />
                             </div>
     
@@ -160,7 +153,7 @@ function Landing(props) {
                                         <label>Fecha Inicio</label>
                                     </div>
                                     <div className="textoinicio1">
-                                        <input className="input inputdateinicio" type="date" id="iddateinicio1" value=""/>
+                                        <input className="input inputdateinicio" type="date" id="iddateinicio1"/>
                                     </div>
                                 </div>
     
@@ -170,7 +163,7 @@ function Landing(props) {
                                     </div>
                                     
                                     <div className="textofin1">
-                                        <input className="input inputdatefin" type="date" id="iddatefin1" value=""/>
+                                        <input className="input inputdatefin" type="date" id="iddatefin1"/>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +174,7 @@ function Landing(props) {
                         </div>
     
                         <div className="parrafo">
-                            <label className="descripcion" id="idparrafo1">Bienvenido al simulador de SOA, para poder utilizarlo debe elegir un producto de la lista de productos, rellenar con la cantidad de unidades que desea producir y finalmente el rango de fechas que le gustaría dar a su proyecto</label>
+                            <label className="descripcion" id="idparrafo">Bienvenido al simulador de SOA, para poder utilizarlo debe elegir un producto de la lista de productos, rellenar con la cantidad de unidades que desea producir y finalmente el rango de fechas que le gustaría dar a su proyecto</label>
                         </div>
                     </div>
                 </div>
@@ -190,7 +183,6 @@ function Landing(props) {
     </div>
 </div>
 
-</body>
 
 </div>
 )

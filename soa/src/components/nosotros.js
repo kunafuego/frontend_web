@@ -13,12 +13,11 @@ function Nosotros(props) {
 
     </header>
 
-    <body>
         <div className="nosotros">
             <h1 className="titulo">Sobre Nosotros</h1>
 
             <div className="sub">
-                <h3 classNameName="probandos">Somos el equipo creador de SOA, conformado por:</h3>
+                <h3 className="probandos">Somos el equipo creador de SOA, conformado por:</h3>
             </div>
 
             <section className="grid_nosotros">
@@ -56,7 +55,6 @@ function Nosotros(props) {
                 </div>
             </section>
         </div>
-    </body>
 </div>
 )
 }
