@@ -66,8 +66,6 @@ function Simulacion(props){
             fecha_fin: document.getElementById("iddatefin").value,
             producción: document.getElementById("sliderid").value,
             producto: document.getElementById("tipo_producto").value,
-            tipo: 'Gerente',
-            id_empresa: 3
         };
         await axios
         .post(url, body)

@@ -5,9 +5,6 @@ import useCookieAuth from "../hooks/useCookieAuth";
 
 function Registro(props) {
 
-    const tipo = 'Gerente'
-    const estado_solicitud = 'Aceptada'
-    
     const [nombre, setName] = useState("");
     const [mail, setMail] = useState("");
     const [password, setPassword] = useState("");
@@ -22,13 +19,11 @@ function Registro(props) {
             e.preventDefault();
             const response = await axios
                 .post(`${process.env.REACT_APP_SERVER_URL}/auth/signup`, {
-                "tipo": tipo,
-                "estado_solicitud": estado_solicitud,
                 "nombre": nombre,
                 "email": mail,
                 "contrasena": password,
                 "contrasena2": password2,
-                "nombre_empresa": empresa,
+                "empresa": empresa,
             });
             if (!response.data.error) {
                 navigate("/");
