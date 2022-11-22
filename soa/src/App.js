@@ -5,6 +5,7 @@ import './simulacion.css';
 import './forms.css';
 import Routing from './Routing';
 import axios from 'axios';
+import Landing from './components/landing'; 
 
 axios.defaults.withCredentials = true
 
