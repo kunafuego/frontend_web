@@ -13,8 +13,6 @@ function App() {
   return (
     <div className="App"> 
       <header className="App-header">
-        <Route index element={<Landing/>} />
-        <Route path='*' element={<Landing/>} />
         <Routing></Routing>
       </header>
     </div>
