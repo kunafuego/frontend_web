@@ -19,7 +19,7 @@ function Routing(){
             <CookieAuthProvider>
                 <TokenAuthProvider>
                     <Routes>
-                        <Route path={'/'} element={<Landing/>} />
+                        <Route path={'/'} element={<FAQ/>} />
                         <Route path={'/FAQ'} element={<FAQ/>} />
                         <Route path={'/nosotros'} element={<Nosotros/>} />
                         <Route path={'/about'} element={<About/>} />
