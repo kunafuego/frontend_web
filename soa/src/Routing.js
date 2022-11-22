@@ -19,16 +19,16 @@ function Routing(){
             <CookieAuthProvider>
                 <TokenAuthProvider>
                     <Routes>
-                        <Route path={'/'} element={<FAQ/>} />
-                        <Route path={'/FAQ'} element={<FAQ/>} />
-                        <Route path={'/nosotros'} element={<Nosotros/>} />
-                        <Route path={'/about'} element={<About/>} />
-                        <Route path={'/inicio_sesion'} element={<Inicio/>} />
-                        <Route path={'/registro'} element={<Registro/>} />
-                        <Route path={'/historico'} element={<Historico/>} />
-                        <Route path={'/resultados'} element={<Resultados/>} />
-                        <Route path={'/solicitudes'} element={<Solicitudes/>} />
-                        <Route path={'/simulacion'} element={<Simulacion/>} />
+                        <Route index element={<Landing/>} />
+                        <Route path='FAQ' element={<FAQ/>} />
+                        <Route path='nosotros' element={<Nosotros/>} />
+                        <Route path='about' element={<About/>} />
+                        <Route path='inicio_sesion' element={<Inicio/>} />
+                        <Route path='registro' element={<Registro/>} />
+                        <Route path='historico' element={<Historico/>} />
+                        <Route path='resultados' element={<Resultados/>} />
+                        <Route path='solicitudes' element={<Solicitudes/>} />
+                        <Route path='simulacion' element={<Simulacion/>} />
                     </Routes>
                 </TokenAuthProvider>
             </CookieAuthProvider>
