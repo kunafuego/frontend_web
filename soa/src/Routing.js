@@ -11,6 +11,7 @@ import Resultados from './components/resultados';
 import Solicitudes from './components/solicitudes';
 import Simulacion from './components/simulacion';
 import CookieAuthProvider from './contexts/cookieAuth';
+import TokenAuthProvider from './contexts/tokenAuth';
 
 function Routing(){
     return(
