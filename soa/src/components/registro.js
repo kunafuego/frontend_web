@@ -97,28 +97,14 @@ function Registro(props) {
                 <div className="drop">
 
                     <fieldset className="esquema">
-                        <label className="labels" for="tipo_usuario">Tipo de Usuario:</label>
-                        <select className="seleccionar" id="tipo_usuario" onChange={tipo_input}>
-                            <option value="Usuario Finanzas">Usuario Finanzas</option>
-                            <option value="Usuario Insumos">Usuario Insumos</option>
-                            <option value="Usuario Empleos">Usuario Empleos</option>
-                            <option value="Usuario Gerente">Usuario Gerente</option>
-                        </select>
+
+                        <label className="labels" for="mail">Inserte nombre de su Empresa:</label>
+                        <input type="text" id="empresa" name="user_empresa" value={empresa} onChange={(e) => setCompany(e.target.value)} required />
                         
-                        <label className="labels" id="label_escondida"> Inserte nombre de su Empresa:</label>
-                        <input type="hidden" id="texto_empresa" value={empresa} onChange={(e) => setCompany(e.target.value)} required/>
-                        
-                        <div className="empresa">
-                            <label className="labels" id="label_nombre_empresa">Nombre Empresa:</label>
-                            <select className="seleccionar" id="nombre_empresa">
-                                <option value="Codelco">Codelco</option>
-                                <option value="SQM">SQM</option>
-                                <option value="Cristalerías Chile">Cristalerías Chile</option>
-                            </select>
-                        </div>
                         <div> 
                             <button onclick="window.location.href='./home.html';" className="registerbutton" type="submit">Sign Up</button> 
                         </div>
+
                     </fieldset>
                 </div>
             </form>

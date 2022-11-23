@@ -1,5 +1,5 @@
 import React, { createContext, useMemo } from 'react';
-import useLocalStorage from '../hooks/useLocalStorage.js';
+import useLocalStorage from '../hooks/useLocalStorage';
   
 export const tokenAuth = createContext();
   

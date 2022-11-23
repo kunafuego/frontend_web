@@ -3,6 +3,8 @@ import axios from "axios";
 import { Navigate, useNavigate } from 'react-router-dom';
 import Navbar from "./navbar";
 import useCookieAuth from "../hooks/useCookieAuth";
+import jwtDecode from 'jwt-decode';
+import useTokenAuth from '../hooks/useTokenAuth';
 
 
 function Inicio(props) {
@@ -11,6 +13,7 @@ function Inicio(props) {
     const navigate = useNavigate();
 
     const { handleUserLogin } = useCookieAuth();
+    const { handleTokenChange } = useTokenAuth();
 
     const userValidation = async (e) => {
         try {
@@ -21,9 +24,12 @@ function Inicio(props) {
                 "password": password
             });
             if (!response.data.error) {
+                handleTokenChange(response.data['token'], 'login');
                 handleUserLogin();
                 navigate("/simulacion");
-        }
+            } else {
+                navigate("/");
+            }
         } catch(error) {
             alert(`[${error.response.status}] ${error.response.data}`)
         }
